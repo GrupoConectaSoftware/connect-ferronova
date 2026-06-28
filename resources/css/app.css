@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-description: 'Plus Jakarta Sans', sans-serif;
+
+    --color-ferro-yellow-100: #FFF3C4;
+    --color-ferro-yellow-300: #FCD34D;
+    --color-ferro-yellow-500: #FACC15;
+    --color-ferro-yellow-700: #CA8A04;
+    --color-ferro-yellow-900: #854D0E;
+
+    --color-ferro-carbon-100: #CBD5E1;
+    --color-ferro-carbon-300: #64748B;
+    --color-ferro-carbon-500: #334155;
+    --color-ferro-carbon-700: #1E293B;
+    --color-ferro-carbon-900: #0F172A;
+
+    --color-ferro-steel-100: #F4F4F5;
+    --color-ferro-steel-300: #D4D4D8;
+    --color-ferro-steel-500: #71717A;
+    --color-ferro-steel-700: #3F3F46;
+    --color-ferro-steel-900: #18181B;
+
+    --color-ferro-construction-100: #FFEDD5;
+    --color-ferro-construction-300: #FDBA74;
+    --color-ferro-construction-500: #F97316;
+    --color-ferro-construction-700: #C2410C;
+    --color-ferro-construction-900: #7C2D12;
+
+    --color-ferro-gold-100: #FEF3C7;
+    --color-ferro-gold-300: #FCD34D;
+    --color-ferro-gold-500: #D4AF37;
+    --color-ferro-gold-700: #B8860B;
+    --color-ferro-gold-900: #8B6914;
+
+    --color-ferro-success: #22C55E;
+    --color-ferro-danger: #EF4444;
+    --color-ferro-warning: #F59E0B;
+    --color-ferro-info: #3B82F6;
+    --color-ferro-whatsapp: #25D366;
+    --color-ferro-purple: #8B5CF6;
+    --color-ferro-cyan: #06B6D4;
+
+    --color-ferro-white: #FFFFFF;
+    --color-ferro-background: #F8FAFC;
+    --color-ferro-black: #020617;
+}
