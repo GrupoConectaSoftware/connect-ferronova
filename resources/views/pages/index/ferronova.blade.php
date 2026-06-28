@@ -1,0 +1,76 @@
+{{-- ==========================================================
+    PLANTILLA PRINCIPAL: FERRONOVA - ERP INDUSTRIAL
+    ==========================================================
+    Este es el archivo maestro que carga el layout completo
+    de la página de inicio de FERRANOVA.
+    Incluye:
+    - Meta tags y SEO básico
+    - Fuentes de Google (Space Grotesk, Inter, Plus Jakarta Sans)
+    - Alpine.js para interactividad
+    - Assets compilados con Vite (CSS + JS)
+    - Sección de introducción con carrusel
+    ========================================================== --}}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {{-- ==========================================================
+        META TAGS BÁSICOS
+        ========================================================== --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{-- ==========================================================
+        TÍTULO Y SEO
+        ========================================================== --}}
+    <title>FERRANOVA - ERP Industrial para Ferreterías y Construcción</title>
+    <meta name="description" content="FERRANOVA es el ERP especializado para ferreterías y suministros industriales. Gestiona inventario, ventas, compras, clientes y maquinaria en una sola plataforma.">
+    <meta name="keywords" content="ERP ferretería, software industrial, gestión de inventario, ventas, compras, maquinaria, construcción">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- ==========================================================
+        OPEN GRAPH (REDES SOCIALES)
+        ========================================================== --}}
+    <meta property="og:title" content="FERRANOVA - ERP Industrial para Ferreterías y Construcción">
+    <meta property="og:description" content="Gestiona inventario, ventas, compras, clientes y maquinaria en una sola plataforma. El ERP especializado para ferreterías y suministros industriales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('asset/logos/logoOficial.png') }}">
+
+    {{-- ==========================================================
+        FUENTES DE GOOGLE
+        ========================================================== --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    {{-- ==========================================================
+        ALPINE.JS (INTERACTIVIDAD)
+        ========================================================== --}}
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    {{-- ==========================================================
+        ASSETS COMPILADOS CON VITE
+        ========================================================== --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body class="bg-ferro-background text-ferro-carbon-700 font-body antialiased">
+
+    {{-- ==========================================================
+        CONTENIDO PRINCIPAL
+        ========================================================== --}}
+    <main role="main" aria-label="Contenido principal de FERRANOVA">
+        {{-- Sección de introducción con carrusel --}}
+        @include('pages.index.layout.sections.layout-introduction')
+    </main>
+
+    {{-- ==========================================================
+        SCRIPTS ADICIONALES (SI LOS HUBIERA)
+        ========================================================== --}}
+    {{-- @stack('scripts') --}}
+
+</body>
+</html>
