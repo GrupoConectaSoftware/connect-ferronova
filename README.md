@@ -1,59 +1,419 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
+```md
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,35:334155,70:FACC15,100:F97316&height=250&section=header&text=FERRANOVA&fontSize=48&fontColor=FFFFFF&animation=fadeIn"/>
 </p>
 
-## About Laravel
+<p align="center">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Industrial ERP • Inventory • Sales • Machinery • Business Management
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<p align="center">
 
-## Learning Laravel
+<img src="https://img.shields.io/badge/ERP-Industrial-0F172A?style=for-the-badge&labelColor=FACC15"/>
+<img src="https://img.shields.io/badge/Laravel-12-F97316?style=for-the-badge&logo=laravel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vue-3-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+</p>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+# 🏗 About FERRANOVA
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+**FERRANOVA** is an Enterprise Resource Planning (ERP) platform specifically designed for hardware stores, industrial suppliers, machinery rental companies and construction businesses.
 
-### Premium Partners
+The platform centralizes every critical business process into a single ecosystem, allowing companies to manage operations efficiently, reduce manual work and make better decisions through real-time information.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Rather than being just another inventory application, FERRANOVA is built as a scalable business platform focused on operational excellence.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# 🎯 Purpose
 
-## Code of Conduct
+FERRANOVA was created to digitize and optimize the daily operations of industrial businesses.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+The platform helps organizations to:
 
-## Security Vulnerabilities
+• Manage inventory with precision
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+• Control purchases and suppliers
 
-## License
+• Register products sold by unit, package or machinery
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+• Process sales and quotations
+
+• Schedule rentals and reservations
+
+• Monitor business performance
+
+• Centralize all company operations
+
+---
+
+# 🧩 Core Modules
+
+The system is organized into specialized business modules.
+
+### 📊 Dashboard
+
+Business indicators
+
+Operational metrics
+
+Real-time statistics
+
+Activity monitoring
+
+---
+
+### 📦 Products
+
+Product catalog
+
+Categories
+
+Brands
+
+Unit management
+
+Pricing
+
+Product variants
+
+---
+
+### 📦 Inventory
+
+Stock control
+
+Inventory adjustments
+
+Transfers
+
+Warehouse management
+
+Kardex
+
+Low stock monitoring
+
+---
+
+### 💰 Sales
+
+Point of Sale
+
+Invoices
+
+Quotations
+
+Returns
+
+Customer orders
+
+---
+
+### 🛒 Purchases
+
+Purchase orders
+
+Supplier management
+
+Product reception
+
+Cost management
+
+---
+
+### 👥 CRM
+
+Customers
+
+Suppliers
+
+Business relationships
+
+Purchase history
+
+Sales history
+
+---
+
+### 🚜 Machinery
+
+Equipment management
+
+Availability
+
+Maintenance
+
+Rental status
+
+Machine lifecycle
+
+---
+
+### 📅 Scheduling
+
+Equipment reservations
+
+Service appointments
+
+Calendar management
+
+Business reminders
+
+---
+
+### 📈 Reports
+
+Sales reports
+
+Inventory reports
+
+Purchasing analytics
+
+Financial summaries
+
+Business intelligence
+
+---
+
+### ⚙️ Administration
+
+Users
+
+Roles
+
+Permissions
+
+Company configuration
+
+Branches
+
+General settings
+
+---
+
+# 🏛 Business Philosophy
+
+FERRANOVA follows one simple principle:
+
+> Every business process should be connected.
+
+Instead of managing inventory, sales, customers and purchases independently, every module shares information to create a unified business ecosystem.
+
+---
+
+# 🎨 Design System
+
+The visual identity is inspired by industrial environments, engineering and modern enterprise software.
+
+### 🟡 Ferro Yellow
+
+Brand identity
+
+### ⚫ Ferro Carbon
+
+Corporate structure
+
+### ⚙ Ferro Steel
+
+Neutral interfaces
+
+### 🟠 Ferro Industrial
+
+Construction & operations
+
+### 🥇 Ferro Gold
+
+Premium experiences
+
+---
+
+# 🖋 Typography
+
+**Space Grotesk**
+
+Headings
+
+Industrial identity
+
+---
+
+**Inter**
+
+Interface
+
+Forms
+
+Tables
+
+---
+
+**Plus Jakarta Sans**
+
+Descriptions
+
+Secondary content
+
+---
+
+# 🛠 Technology Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=laravel,vue,vite,tailwind,php,postgres,js,git,github"/>
+
+</p>
+
+### Backend
+
+Laravel 12
+
+REST API
+
+Eloquent ORM
+
+Laravel Sanctum
+
+---
+
+### Frontend
+
+Blade Templates
+
+Vue Components
+
+Axios
+
+Pinia
+
+Tailwind CSS
+
+Vite
+
+---
+
+### Database
+
+PostgreSQL
+
+---
+
+# 🏗 Architecture
+
+FERRANOVA follows a hybrid architecture.
+
+```
+
+Blade
+│
+├── Complete pages
+├── Layouts
+├── Navigation
+└── Business screens
+
+↓
+
+Vue Components
+
+↓
+
+Interactive Forms
+Dynamic Tables
+Modals
+Business Logic
+Real-time validation
+
+↓
+
+Laravel
+
+↓
+
+PostgreSQL
+
+```
+
+This approach combines Laravel's robustness with Vue's reactive capabilities, resulting in a highly maintainable enterprise application.
+
+---
+
+# 🚀 Scalability
+
+The platform is designed to support:
+
+• Multiple branches
+
+• Thousands of products
+
+• Industrial warehouses
+
+• Machinery rentals
+
+• Large customer databases
+
+• Business growth
+
+---
+
+# 🌎 Vision
+
+FERRANOVA aims to become a complete ERP ecosystem for the industrial sector.
+
+The long-term vision is to integrate:
+
+• Artificial Intelligence
+
+• Business Analytics
+
+• Mobile Applications
+
+• QR Systems
+
+• Digital Catalogs
+
+• Customer Portals
+
+• Enterprise Integrations
+
+Building a modern platform capable of transforming how hardware stores and industrial companies operate.
+
+---
+
+# 🤝 Development Principles
+
+FERRANOVA is developed following modern software engineering practices.
+
+• Clean Architecture
+
+• Modular Development
+
+• Scalable Code
+
+• Business-Oriented Design
+
+• Component-Based Development
+
+• Maintainable Structure
+
+---
+
+<p align="center">
+
+## 🏗 FERRANOVA
+
+Building the future of industrial business management.
+
+</p>
+
+---
+
+<p align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,50:FACC15,100:0F172A&height=120&section=footer"/>
+
+</p>
+```
