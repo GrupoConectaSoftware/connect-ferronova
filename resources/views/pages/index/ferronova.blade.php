@@ -71,6 +71,9 @@
             {{-- Sección de estadísticas: 4 cards con datos de la empresa --}}
             @include('pages.index.layout.sections.layout-statistic')
 
+            {{-- Sección de recomendaciones: cards con productos recomendados --}}
+            @include('pages.index.layout.sections.layout-recommended')
+
     </main>
 
     {{-- ==========================================================
