@@ -74,6 +74,10 @@
             {{-- Sección de recomendaciones: cards con productos recomendados --}}
             @include('pages.index.layout.sections.layout-recommended')
 
+            
+            {{-- Sección de invitacion: se compone de n video y texto relacional encima para empresas grandes --}}
+            @include('pages.index.layout.sections.layout-invitation')
+
     </main>
 
     {{-- ==========================================================
