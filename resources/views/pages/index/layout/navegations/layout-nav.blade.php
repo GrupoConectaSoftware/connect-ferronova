@@ -7,11 +7,30 @@
     - Logo, buscador, favoritos, carrito, ingresar
     - Menú de navegación desktop
     - Overlay mobile con buscador, enlaces, redes y contacto
+    - Comportamiento fixed: se oculta al bajar y aparece al subir
     ========================================================== --}}
 
 <header 
-    class="w-full bg-white border-b border-ferro-carbon-100" 
-    x-data="{ mobileMenu: false }"
+    class="w-full bg-white border-b border-ferro-carbon-100 fixed top-0 left-0 z-50 transition-transform duration-300"
+    x-data="{ 
+        mobileMenu: false,
+        lastScroll: 0,
+        hidden: false,
+        init() {
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop
+                if (currentScroll > this.lastScroll && currentScroll > 80) {
+                    // Scroll hacia abajo - ocultar header
+                    this.hidden = true
+                } else {
+                    // Scroll hacia arriba - mostrar header
+                    this.hidden = false
+                }
+                this.lastScroll = currentScroll
+            })
+        }
+    }"
+    x-bind:class="hidden ? '-translate-y-full' : 'translate-y-0'"
     role="banner"
     aria-label="Encabezado principal de FERRANOVA"
 >
@@ -19,12 +38,12 @@
     {{-- ==========================================================
         BADGE DE COTIZACIÓN
         ========================================================== --}}
-    @include('pages.index.component.introduction.component-nav-badge')
+    @include('pages.index.component.sections.introduction.component-nav-badge')
 
     {{-- ==========================================================
         REDES SOCIALES + CARRUSEL DE PROMOCIONES
         ========================================================== --}}
-    @include('pages.index.component.introduction.component-nav-media')
+    @include('pages.index.component.sections.introduction.component-nav-media')
 
     {{-- ==========================================================
         MENÚ PRINCIPAL

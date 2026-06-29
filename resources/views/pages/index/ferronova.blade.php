@@ -55,6 +55,7 @@
         ASSETS COMPILADOS CON VITE
         ========================================================== --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 
 <body class="bg-ferro-background text-ferro-carbon-700 font-body antialiased">
@@ -63,14 +64,18 @@
         CONTENIDO PRINCIPAL
         ========================================================== --}}
     <main role="main" aria-label="Contenido principal de FERRANOVA">
-        {{-- Sección de introducción con carrusel --}}
-        @include('pages.index.layout.sections.layout-introduction')
+
+            {{-- Sección de introducción: Span de badges (Textos promocionales), span de redes soaciales ,menu de navegacion, carrusel de imagenes --}}
+            @include('pages.index.layout.sections.layout-introduction')
+            
+            {{-- Sección de estadísticas: 4 cards con datos de la empresa --}}
+            @include('pages.index.layout.sections.layout-statistic')
+
     </main>
 
     {{-- ==========================================================
         SCRIPTS ADICIONALES (SI LOS HUBIERA)
         ========================================================== --}}
-    {{-- @stack('scripts') --}}
 
 </body>
 </html>

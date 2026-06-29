@@ -120,7 +120,7 @@
         ========================================================== --}}
     <div class="relative z-10 flex-1 flex items-center justify-center w-full">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            @include('pages.index.component.introduction.component-section-text')
+            @include('pages.index.component.sections.introduction.component-section-text')
         </div>
     </div>
 
