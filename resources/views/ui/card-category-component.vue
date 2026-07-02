@@ -18,121 +18,121 @@ const categories = ref([
     {
         id: 1,
         name: 'Herramientas eléctricas',
-        image: 'asset/categories/herramientas-electricas.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 1240,
     },
     {
         id: 2,
         name: 'Herramientas manuales',
-        image: 'asset/categories/herramientas-manuales.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 880,
     },
     {
         id: 3,
         name: 'Seguridad industrial',
-        image: 'asset/categories/seguridad-industrial.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 640,
     },
     {
         id: 4,
         name: 'Equipos de construcción',
-        image: 'asset/categories/equipos-construccion.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 410,
     },
     {
         id: 5,
         name: 'Materiales eléctricos',
-        image: 'asset/categories/materiales-electricos.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 320,
     },
     {
         id: 6,
         name: 'Tornillería y fijaciones',
-        image: 'asset/categories/tornilleria.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 560,
     },
     {
         id: 7,
         name: 'Maquinaria pesada',
-        image: 'asset/categories/maquinaria-pesada.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 180,
     },
     {
         id: 8,
         name: 'Pinturas y acabados',
-        image: 'asset/categories/pinturas-acabados.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 290,
     },
     {
         id: 9,
         name: 'Jardinería y paisajismo',
-        image: 'asset/categories/jardineria-paisajismo.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 150,
     },
     {
         id: 10,
         name: 'Equipos de medición',
-        image: 'asset/categories/equipos-medicion.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 210,
     },
     {
         id: 11,
         name: 'Cerrajería y candados',
-        image: 'asset/categories/cerrajeria-candados.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 95,
     },
     {
         id: 12,
         name: 'Iluminación industrial',
-        image: 'asset/categories/iluminacion-industrial.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 130,
     },
     {
         id: 13,
         name: 'Equipos de soldadura',
-        image: 'asset/categories/equipos-soldadura.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 75,
     },
     {
         id: 14,
         name: 'Andamios y estructuras',
-        image: 'asset/categories/andamios-estructuras.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 60,
     },
     {
         id: 15,
         name: 'Bombas y motobombas',
-        image: 'asset/categories/bombas-motobombas.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 110,
     },
     {
         id: 16,
         name: 'Mangueras y conexiones',
-        image: 'asset/categories/mangueras-conexiones.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 200,
     },
     {
         id: 17,
         name: 'Abrasivos y discos',
-        image: 'asset/categories/abrasivos-discos.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 140,
     },
     {
         id: 18,
         name: 'Organización y almacenaje',
-        image: 'asset/categories/organizacion-almacenaje.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 85,
     },
     {
         id: 19,
         name: 'Aire comprimido',
-        image: 'asset/categories/aire-comprimido.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 50,
     },
     {
         id: 20,
         name: 'Equipos de elevación',
-        image: 'asset/categories/equipos-elevacion.jpg',
+        image: 'asset/sections/category/imagen-herramienta.jpg',
         count: 45,
     },
 ])
@@ -154,8 +154,8 @@ const categories = ref([
                 loading="lazy"
             />
 
-            <!-- OVERLAY OSCURO -->
-            <div class="absolute inset-0 bg-linear-to-t from-ferro-black/70 via-ferro-black/20 to-transparent"></div>
+            <!-- OVERLAY OSCURO (MÁS OSCURO) -->
+            <div class="absolute inset-0 bg-linear-to-t from-ferro-black/85 via-ferro-black/40 to-transparent"></div>
 
             <!-- TEXTO SUPERPUESTO -->
             <div class="absolute inset-0 flex flex-col justify-end p-5 sm:p-6 md:p-7">

@@ -125,7 +125,7 @@ const getRatingStars = (rating) => {
 
                 </div>
             </div>
-        </div>
+        </div> 
 
     </div>
 </template>

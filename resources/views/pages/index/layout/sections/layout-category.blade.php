@@ -13,7 +13,7 @@
         {{-- ENCABEZADO --}}
         <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-8">
             <div>
-                <span class="text-ferro-yellow-500 text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
+                <span class="text-ferro-danger text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
                     Categorías
                 </span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-ferro-carbon-900 mt-1" style="font-family: var(--font-heading);">

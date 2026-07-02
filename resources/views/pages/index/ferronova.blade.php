@@ -95,6 +95,8 @@
             {{-- Sección de reseñas verificadas: carrusel de reseñas de clientes --}}
             @include('pages.index.layout.sections.layout-feedback')
 
+            {{-- Sección de footer: links de navegación, redes sociales, copyright --}}
+            @include('pages.index.layout.footer.layout-footer')
     </main>
 
     {{-- ==========================================================

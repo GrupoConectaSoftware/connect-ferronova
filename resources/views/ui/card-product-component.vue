@@ -1,14 +1,13 @@
-<!-- ==========================================================
+<!--
+    ==========================================================
     COMPONENTE: TARJETA DE PRODUCTO
-    ========================================================== -->
+    ==========================================================
+-->
 
 <script setup>
 import { ref, computed } from 'vue'
 
 const products = ref([
-    // ==========================================================
-    // PRODUCTOS RECOMENDADOS (SIEMPRE true)
-    // ==========================================================
     {
         id: 1,
         name: 'Taladro percutor inalámbrico 20V',
@@ -21,6 +20,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 2,
@@ -34,6 +34,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 3,
@@ -47,6 +48,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 4,
@@ -60,6 +62,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 5,
@@ -73,6 +76,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 6,
@@ -86,6 +90,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 7,
@@ -99,6 +104,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 8,
@@ -112,6 +118,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 9,
@@ -125,6 +132,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 10,
@@ -138,6 +146,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 11,
@@ -151,6 +160,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 12,
@@ -164,6 +174,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 13,
@@ -177,6 +188,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 14,
@@ -190,6 +202,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 15,
@@ -203,6 +216,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 16,
@@ -216,6 +230,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 17,
@@ -229,6 +244,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 18,
@@ -242,6 +258,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 19,
@@ -255,6 +272,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 20,
@@ -268,6 +286,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 21,
@@ -281,6 +300,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 22,
@@ -294,6 +314,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 23,
@@ -307,6 +328,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 24,
@@ -320,6 +342,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 25,
@@ -333,6 +356,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 26,
@@ -346,6 +370,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 27,
@@ -359,6 +384,7 @@ const products = ref([
             descuento: false,
             promocion: true,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 28,
@@ -372,6 +398,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 29,
@@ -385,6 +412,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
     {
         id: 30,
@@ -398,6 +426,7 @@ const products = ref([
             descuento: false,
             promocion: false,
         },
+        image: 'asset/sections/productos/imagen-producto.jpg',
     },
 ])
 
@@ -424,26 +453,21 @@ const getBadgeText = (badge) => {
 
 <template>
     <div v-for="product in filteredProducts" :key="product.id" class="snap-start shrink-0">
-        <!-- ==========================================================
-            ANCHO DE LA CARD:
-            - w-[75vw] en mobile (ocupa el 75% de la pantalla)
-            - sm:w-[260px] en tablet
-            - lg:w-[280px] en desktop
-            ========================================================== -->
         <div
             class="bg-ferro-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-4 sm:p-5 border border-ferro-carbon-100/50 flex flex-col h-full w-[75vw] sm:w-65 lg:w-70 max-w-70">
 
             <!-- ==========================================================
-                IMAGEN + BADGES
+                IMAGEN
                 ========================================================== -->
             <div class="relative aspect-square bg-ferro-steel-50 rounded-lg overflow-hidden mb-3">
-                <div class="w-full h-full flex items-center justify-center text-ferro-steel-300 text-sm">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                </div>
+                <img 
+                    :src="product.image" 
+                    :alt="product.name"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                />
 
+                <!-- BADGES -->
                 <div class="absolute top-2 left-2 flex flex-col gap-1">
                     <span
                         class="text-[9px] sm:text-[10px] font-description font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-ferro-yellow-500 text-ferro-black"
@@ -458,15 +482,19 @@ const getBadgeText = (badge) => {
                 </div>
             </div>
 
+            <!-- NOMBRE -->
             <h3 class="text-sm sm:text-base font-semibold text-ferro-carbon-900 line-clamp-1"
                 style="font-family: var(--font-heading);">
                 {{ product.name }}
             </h3>
+
+            <!-- DESCRIPCIÓN -->
             <p class="text-[11px] sm:text-xs text-ferro-steel-500 mt-0.5 line-clamp-2 flex-1"
                 style="font-family: var(--font-body);">
                 {{ product.description }}
             </p>
 
+            <!-- PRECIO -->
             <div class="mt-3 flex items-baseline gap-2">
                 <span class="text-lg sm:text-xl font-bold text-ferro-carbon-900"
                     style="font-family: var(--font-heading);">
@@ -478,6 +506,7 @@ const getBadgeText = (badge) => {
                 </span>
             </div>
 
+            <!-- BOTÓN -->
             <button
                 class="mt-3 w-full bg-ferro-carbon-900 hover:bg-ferro-carbon-700 text-ferro-white text-xs sm:text-sm font-semibold py-2.5 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                 style="font-family: var(--font-heading);">

@@ -12,7 +12,7 @@
 
         {{-- ENCABEZADO --}}
         <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-            <span class="text-ferro-yellow-500 text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
+            <span class="text-ferro-danger text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
                 Reseñas verificadas
             </span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-ferro-carbon-900 mt-1" style="font-family: var(--font-heading);">
