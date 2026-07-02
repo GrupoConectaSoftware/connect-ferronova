@@ -92,6 +92,9 @@
             {{-- Sección de marcas aliadas: carrusel de logos de marcas --}}
             @include('pages.index.layout.sections.layout-brand')
 
+            {{-- Sección de reseñas verificadas: carrusel de reseñas de clientes --}}
+            @include('pages.index.layout.sections.layout-feedback')
+
     </main>
 
     {{-- ==========================================================

@@ -32,6 +32,7 @@ import CardCategoryComponent from '../views/ui/card-category-component.vue';
 import CardAdvantageComponent from '../views/ui/card-advantage-component.vue';
 import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
 import CardBrandComponent from '../views/ui/card-brand-component.vue';
+import CardFeedbackComponent from '../views/ui/card-feedback-component.vue';
 
 /**
  * ==========================================================
@@ -96,6 +97,15 @@ schedulingApp.mount('#scheduling-app');
 const brandApp = createApp({});
 brandApp.component('card-brand-component', CardBrandComponent);
 brandApp.mount('#brand-app');
+
+/**
+ * ==========================================================
+ * APP 7: RESEÑAS VERIFICADAS
+ * ==========================================================
+ */
+const feedbackApp = createApp({});
+feedbackApp.component('card-feedback-component', CardFeedbackComponent);
+feedbackApp.mount('#feedback-app');
 
 /**
  * ==========================================================
