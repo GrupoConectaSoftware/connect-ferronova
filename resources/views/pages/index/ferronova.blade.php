@@ -74,12 +74,14 @@
             {{-- Sección de recomendaciones: cards con productos recomendados --}}
             @include('pages.index.layout.sections.layout-recommended')
 
-            
             {{-- Sección de invitacion: se compone de n video y texto relacional encima para empresas grandes --}}
             @include('pages.index.layout.sections.layout-invitation')
 
             {{-- Sección de categorías: carrusel de categorias --}}
             @include('pages.index.layout.sections.layout-category')
+
+            {{-- Sección de ventajas: carrusel de ventajas --}}
+            @include('pages.index.layout.sections.layout-advantages')
 
     </main>
 
