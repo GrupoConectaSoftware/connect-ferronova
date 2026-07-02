@@ -86,6 +86,9 @@
             {{-- Sección de agendamiento: carrusel de equipos para alquilar --}}
             @include('pages.index.layout.sections.layout-scheduling')
 
+            {{-- Sección de CTA: invitación a cotizar o agendar asesoría --}}
+            @include('pages.index.layout.sections.layout-cta')
+
             {{-- Sección de marcas aliadas: carrusel de logos de marcas --}}
             @include('pages.index.layout.sections.layout-brand')
 
