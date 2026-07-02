@@ -78,6 +78,9 @@
             {{-- Sección de invitacion: se compone de n video y texto relacional encima para empresas grandes --}}
             @include('pages.index.layout.sections.layout-invitation')
 
+            {{-- Sección de categorías: carrusel de categorias --}}
+            @include('pages.index.layout.sections.layout-category')
+
     </main>
 
     {{-- ==========================================================

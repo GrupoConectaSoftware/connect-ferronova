@@ -1,0 +1,86 @@
+{{-- ==========================================================
+    SECCIÓN: CATEGORÍAS DESTACADAS
+    ========================================================== --}}
+
+<section 
+    class="w-full py-12 sm:py-16 bg-ferro-background"
+    aria-label="Categorías destacadas"
+    role="region"
+>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {{-- ENCABEZADO --}}
+        <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-8">
+            <div>
+                <span class="text-ferro-yellow-500 text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
+                    Categorías
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-ferro-carbon-900 mt-1" style="font-family: var(--font-heading);">
+                    Categorías destacadas
+                </h2>
+                <p class="text-ferro-steel-500 text-sm mt-1" style="font-family: var(--font-body);">
+                    Encuentra rápido lo que tu obra necesita.
+                </p>
+            </div>
+
+            {{-- CONTROLES DEL CARRUSEL (SOLO DESKTOP) --}}
+            <div class="flex gap-2 mt-4 sm:mt-0" 
+                 x-data="{ 
+                     scrollContainer: null, 
+                     init() { 
+                         this.scrollContainer = document.getElementById('carrusel-categories') 
+                     } 
+                 }">
+                <button 
+                    @click="scrollContainer.scrollBy({ left: -200, behavior: 'smooth' })"
+                    class="w-10 h-10 rounded-full bg-ferro-white border border-ferro-carbon-100 hover:bg-ferro-yellow-500 hover:border-ferro-yellow-500 hover:text-ferro-black text-ferro-steel-500 transition-all duration-200 flex items-center justify-center shadow-sm"
+                    aria-label="Desplazar a la izquierda"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button 
+                    @click="scrollContainer.scrollBy({ left: 200, behavior: 'smooth' })"
+                    class="w-10 h-10 rounded-full bg-ferro-white border border-ferro-carbon-100 hover:bg-ferro-yellow-500 hover:border-ferro-yellow-500 hover:text-ferro-black text-ferro-steel-500 transition-all duration-200 flex items-center justify-center shadow-sm"
+                    aria-label="Desplazar a la derecha"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        {{-- CARRUSEL --}}
+        <div 
+            id="carrusel-categories"
+            class="flex gap-4 sm:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
+            style="scrollbar-width: none; -ms-overflow-style: none;"
+        >
+            <style>
+                #carrusel-categories::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+
+            {{-- COMPONENTE VUE --}}
+            <div id="categories-app" class="flex gap-4 sm:gap-5">
+                <card-category-component></card-category-component>
+            </div>
+        </div>
+
+        {{-- INDICADOR DE DESLIZAMIENTO (SOLO MOBILE) --}}
+        <div class="flex justify-center mt-4 lg:hidden">
+            <div class="flex gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-ferro-yellow-500"></span>
+                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
+                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
+                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
