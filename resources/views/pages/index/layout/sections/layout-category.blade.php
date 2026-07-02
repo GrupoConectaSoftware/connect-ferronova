@@ -25,7 +25,7 @@
             </div>
 
             {{-- CONTROLES DEL CARRUSEL (SOLO DESKTOP) --}}
-            <div class="flex gap-2 mt-4 sm:mt-0" 
+            <div class="hidden lg:flex gap-2 mt-4 sm:mt-0" 
                  x-data="{ 
                      scrollContainer: null, 
                      init() { 
@@ -68,16 +68,6 @@
             {{-- COMPONENTE VUE --}}
             <div id="categories-app" class="flex gap-4 sm:gap-5">
                 <card-category-component></card-category-component>
-            </div>
-        </div>
-
-        {{-- INDICADOR DE DESLIZAMIENTO (SOLO MOBILE) --}}
-        <div class="flex justify-center mt-4 lg:hidden">
-            <div class="flex gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-ferro-yellow-500"></span>
-                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
-                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
-                <span class="w-2 h-2 rounded-full bg-ferro-carbon-200"></span>
             </div>
         </div>
 

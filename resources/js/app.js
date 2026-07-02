@@ -30,6 +30,7 @@ import CardStatisticComponent from '../views/ui/card-statistic-component.vue';
 import CardProductComponent from '../views/ui/card-product-component.vue';
 import CardCategoryComponent from '../views/ui/card-category-component.vue';
 import CardAdvantageComponent from '../views/ui/card-advantage-component.vue';
+import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
 
 /**
  * ==========================================================
@@ -74,6 +75,17 @@ categoriesApp.mount('#categories-app');
 const advantagesApp = createApp({});
 advantagesApp.component('card-advantage-component', CardAdvantageComponent);
 advantagesApp.mount('#advantages-app');
+
+/**
+ * ==========================================================
+ * APP 5: AGENDAMIENTO / ALQUILER
+ * ==========================================================
+ * Se monta en el elemento con id "scheduling-app".
+ * Muestra el catálogo de equipos para alquiler.
+ */
+const schedulingApp = createApp({});
+schedulingApp.component('card-scheduling-component', CardSchedulingComponent);
+schedulingApp.mount('#scheduling-app');
 
 /**
  * ==========================================================

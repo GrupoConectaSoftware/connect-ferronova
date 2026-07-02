@@ -83,6 +83,9 @@
             {{-- Sección de ventajas: carrusel de ventajas --}}
             @include('pages.index.layout.sections.layout-advantages')
 
+            {{-- Sección de agendamiento: carrusel de equipos para alquilar --}}
+            @include('pages.index.layout.sections.layout-scheduling')
+
     </main>
 
     {{-- ==========================================================
