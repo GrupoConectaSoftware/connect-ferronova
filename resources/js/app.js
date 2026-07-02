@@ -31,6 +31,7 @@ import CardProductComponent from '../views/ui/card-product-component.vue';
 import CardCategoryComponent from '../views/ui/card-category-component.vue';
 import CardAdvantageComponent from '../views/ui/card-advantage-component.vue';
 import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
+import CardBrandComponent from '../views/ui/card-brand-component.vue';
 
 /**
  * ==========================================================
@@ -86,6 +87,15 @@ advantagesApp.mount('#advantages-app');
 const schedulingApp = createApp({});
 schedulingApp.component('card-scheduling-component', CardSchedulingComponent);
 schedulingApp.mount('#scheduling-app');
+
+/**
+ * ==========================================================
+ * APP 6: MARCAS ALIADAS
+ * ==========================================================
+ */
+const brandApp = createApp({});
+brandApp.component('card-brand-component', CardBrandComponent);
+brandApp.mount('#brand-app');
 
 /**
  * ==========================================================
