@@ -117,7 +117,7 @@
 
                 {{-- Ingresar (solo desktop) --}}
                 <a 
-                    href="#" 
+                    href="{{ route('login') }}" 
                     class="hidden sm:flex items-center gap-1.5 text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors"
                     aria-label="Iniciar sesión"
                     title="Iniciar sesión"

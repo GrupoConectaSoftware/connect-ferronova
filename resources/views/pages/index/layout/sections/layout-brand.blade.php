@@ -12,7 +12,7 @@
 
         {{-- ENCABEZADO --}}
         <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-            <span class="text-ferro-danger text-[10px] font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
+            <span class="text-ferro-danger text-[10px] sm:text-xs font-description font-bold uppercase tracking-[0.2em]" style="font-family: var(--font-description);">
                 Confianza
             </span>
             <h2 class="text-2xl sm:text-3xl font-bold text-ferro-carbon-900 mt-1" style="font-family: var(--font-heading);">
