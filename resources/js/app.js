@@ -33,6 +33,7 @@ import CardAdvantageComponent from '../views/ui/card-advantage-component.vue';
 import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
 import CardBrandComponent from '../views/ui/card-brand-component.vue';
 import CardFeedbackComponent from '../views/ui/card-feedback-component.vue';
+import CardUnitedComponent from '../views/ui/card-united-component.vue';
 
 /**
  * ==========================================================
@@ -107,6 +108,16 @@ const feedbackApp = createApp({});
 feedbackApp.component('card-feedback-component', CardFeedbackComponent);
 feedbackApp.mount('#feedback-app');
 
+
+/**
+ * ==========================================================
+ * APP 8: PRODUCTOS POR UNIDAD
+ * ==========================================================
+ */
+const unitedProductsApp = createApp({});
+unitedProductsApp.component('card-united-component', CardUnitedComponent);
+unitedProductsApp.mount('#united-products-app')
+
 /**
  * ==========================================================
  * INICIAR ALPINE
@@ -123,4 +134,4 @@ Alpine.start();
  * ==========================================================
  * Mensaje de confirmación para saber que todo cargó bien.
  */
-console.log('🚀 FERRANOVA - Vue + Alpine cargados correctamente');
+console.log('FERRANOVA - Vue + Alpine cargados correctamente');
