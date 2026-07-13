@@ -64,21 +64,6 @@
             >
         </div>
 
-        {{-- CONFIRMAR CONTRASEÑA --}}
-        <div>
-            <label for="password_confirmation" class="block text-sm font-medium text-ferro-carbon-700 font-body" style="font-family: var(--font-body);">
-                Confirmar contraseña
-            </label>
-            <input 
-                type="password" 
-                id="password_confirmation" 
-                name="password_confirmation" 
-                placeholder="********" 
-                class="mt-1 w-full px-4 py-2 border border-ferro-carbon-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ferro-yellow-500 focus:border-transparent text-sm bg-ferro-white text-ferro-carbon-900 placeholder-ferro-steel-400 transition-all"
-                required
-            >
-        </div>
-
         {{-- BOTÓN REGISTRARSE --}}
         <button 
             type="submit" 
