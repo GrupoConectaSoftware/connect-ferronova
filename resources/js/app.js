@@ -34,6 +34,7 @@ import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
 import CardBrandComponent from '../views/ui/card-brand-component.vue';
 import CardFeedbackComponent from '../views/ui/card-feedback-component.vue';
 import CardUnitedComponent from '../views/ui/card-united-component.vue';
+import CardTeamComponent from '../views/ui/card-team-component.vue';
 
 /**
  * ==========================================================
@@ -117,6 +118,17 @@ feedbackApp.mount('#feedback-app');
 const unitedProductsApp = createApp({});
 unitedProductsApp.component('card-united-component', CardUnitedComponent);
 unitedProductsApp.mount('#united-products-app')
+
+
+/**
+ * ==========================================================
+ * APP 9: CARRUSEL DE EQUIPO (MONTAJE DE LA CARD)
+ * ==========================================================
+ */
+const teamApp = createApp({});
+teamApp.component('card-team-component', CardTeamComponent);
+teamApp.mount('#team-card-app');
+
 
 /**
  * ==========================================================
