@@ -242,7 +242,7 @@
     {{-- ==========================================================
         MENÚ PRINCIPAL
         ========================================================== --}}
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6" aria-label="Navegación principal">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 z-50" aria-label="Navegación principal">
 
         {{-- FILA 1: LOGO + BÚSQUEDA + ICONOS --}}
         <div class="flex items-center justify-between py-3 border-b border-ferro-carbon-100">
