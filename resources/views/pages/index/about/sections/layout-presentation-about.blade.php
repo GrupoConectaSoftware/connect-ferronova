@@ -5,7 +5,7 @@
 <section id="about-us" class="relative w-full py-16 lg:py-24 bg-ferro-background overflow-hidden" aria-label="Quiénes somos">
     
     {{-- PATRÓN DE CUADRÍCULA SUTIL EN TODA LA SECCIÓN --}}
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#8080800C_1px,transparent_1px),linear-gradient(to_bottom,#8080800C_1px,transparent_1px)] bg-[length:24px_24px] pointer-events-none z-0"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#8080800C_1px,transparent_1px),linear-gradient(to_bottom,#8080800C_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none z-0"></div>
     
     {{-- DEGRADADO SUAVE ENCIMA DE LA CUADRÍCULA (Para que no opaque el texto) --}}
     <div class="absolute inset-0 bg-linear-to-b from-ferro-white/80 via-ferro-white/30 to-ferro-background/90 pointer-events-none z-0"></div>
@@ -19,7 +19,7 @@
                                
                 {{-- IMAGEN CENTRAL (GIGANTE) --}}
                 <div class="absolute top-0 -left-4 w-[calc(100%+2rem)] h-full rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-10 border-[6px] border-ferro-white">
-                    <img src="{{ asset('asset/sections/index-nosotros/presentation-about/imagen-presentation.png') }}" alt="Vista panorámica de la ferretería" class="w-full h-full object-cover grayscale-[50%] transition-all duration-700 hover:grayscale-0">
+                    <img src="{{ asset('asset/sections/index-nosotros/presentation-about/imagen-presentation.png') }}" alt="Vista panorámica de la ferretería" class="w-full h-full object-cover grayscale-50 transition-all duration-700 hover:grayscale-0">
                 </div>
 
                 {{-- IMAGEN SUPERIOR IZQUIERDA (MÁS GRANDE Y MÁS ATRASADA) --}}
@@ -55,7 +55,7 @@
                 
                 {{-- Etiqueta y Título --}}
                 <div>
-                    <span class="inline-block text-ferro-yellow-500 font-heading font-bold text-xs uppercase tracking-widest mb-2 border-b-2 border-ferro-yellow-500 pb-1">Quiénes somos</span>
+                    <span class="inline-block text-ferro-yellow-500 font-heading font-bold text-xs uppercase tracking-widest mb-2 border-b-2 border-ferro-yellow-500 pb-1">¿ Quíen es Ferronova ?</span>
                     <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-ferro-carbon-900 tracking-tight leading-tight mt-2">
                         El respaldo profesional<br>que tu obra necesita
                     </h2>
