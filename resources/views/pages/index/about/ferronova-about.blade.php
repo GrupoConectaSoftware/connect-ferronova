@@ -1,19 +1,15 @@
 {{-- ==========================================================
-    PLANTILLA PRINCIPAL: FERRONOVA - POR UNIDAD (UNITED)
+    PLANTILLA MAESTRA: FERRONOVA - SOBRE NOSOTROS (ABOUT)
     ==========================================================
     Este es el archivo maestro que carga el layout completo
-    de la página de ventas por unidad (tornillos, arandelas, etc.)
+    de la página de información corporativa y trayectoria
     de FERRANOVA.
     Incluye:
-    - Meta tags y SEO específicos para Por Unidad
+    - Meta tags y SEO específicos para Sobre Nosotros
     - Fuentes de Google (Space Grotesk, Inter, Plus Jakarta Sans)
     - Alpine.js para interactividad
     - Assets compilados con Vite (CSS + JS)
-    - Navegación y Footer global, y la sección de ventas por unidad
-    ========================================================== --}}
-
-{{-- ==========================================================
-    PLANTILLA PRINCIPAL: FERRONOVA - POR UNIDAD (UNITED)
+    - Navegación y Footer global, y las secciones de About
     ========================================================== --}}
 
 <!DOCTYPE html>
@@ -22,10 +18,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FERRANOVA - Ventas Por Unidad</title>
-    <meta name="description" content="Compra tornillos, tuercas, arandelas, clavos y fijaciones por unidad en FERRANOVA.">
+    <title>Sobre Nosotros | FERRANOVA</title>
+    <meta name="description" content="Conoce la trayectoria, misión, visión y el equipo de FERRANOVA. Tu aliado industrial en herramientas y maquinaria.">
     <link rel="canonical" href="{{ url()->current() }}">
-    <meta property="og:title" content="Por Unidad | FERRANOVA">
+    <meta property="og:title" content="Sobre Nosotros | FERRANOVA">
     <meta property="og:image" content="{{ asset('asset/logos/logoOficial.png') }}">
 
     {{-- FUENTES Y SCRIPTS --}}
@@ -44,13 +40,28 @@
     </div>
 
     {{-- 2. CONTENIDO PRINCIPAL --}}
-    <main id="main-content" role="main" aria-label="Módulo de productos por unidad de FERRANOVA">
+    <main id="main-content" role="main" aria-label="Sobre nosotros FERRANOVA">
 
-        {{-- Sección 1: Hero + Beneficios (Importa el layout que tiene la imagen, el degradado y las cards) --}}
-        @include('pages.index.united.section.layout-hero-united')
+        {{-- Sección 1: Hero --}}
+        @include('pages.index.about.sections.layout-hero-about')
 
-        {{-- Sección 2: Catálogo con Filtros + Componente Vue --}}
-        @include('pages.index.united.section.layout-filter-united')
+        {{-- Sección 2: Presentation (Quiénes somos) --}}
+        @include('pages.index.about.sections.layout-presentation-about')
+
+        {{-- Sección 3: Time (Línea de trayectoria) --}}
+        @include('pages.index.about.sections.layout-time-about')
+
+        {{-- Sección 4: Values (Bento grid) --}}
+        @include('pages.index.about.sections.layout-values-about')
+
+        {{-- Sección 5: Services (Misión y Visión) --}}
+        @include('pages.index.about.sections.layout-services')
+
+        {{-- Sección 6: Split (Imagen grande + info) --}}
+        @include('pages.index.about.sections.layout-split-about')
+
+        {{-- Sección 7: Teams (Equipo de trabajo) --}}
+        @include('pages.index.about.sections.layout-teams-layout')
 
     </main>
 

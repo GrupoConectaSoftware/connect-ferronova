@@ -72,7 +72,7 @@
             </div>
 
             {{-- Sección de introducción: Span de badges (Textos promocionales), span de redes soaciales ,menu de navegacion, carrusel de imagenes --}}
-            @include('pages.index.homepages.sections.layout-introduction')
+            @include('pages.index.homepages.sections.layout-hero')
             
             {{-- Sección de estadísticas: 4 cards con datos de la empresa --}}
             @include('pages.index.homepages.sections.layout-statistic')

@@ -17,6 +17,13 @@ Route::get('/por-unidad', function () {
 })->name('united');
 
 // ==========================================================
+// SOBRE NOSOTROS
+// ==========================================================
+Route::get('/sobre-nosotros', function () {
+    return view('pages.index.about.ferronova-about');
+})->name('about');
+
+// ==========================================================
 // AUTENTICACIÓN (SOLO VISTAS)
 // ==========================================================
 Route::get('/login', function () {
@@ -26,10 +33,3 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('pages.form.sesion.register.form-register');
 })->name('register');
-
-// ==========================================================
-// (Futuras rutas para cuando avancemos)
-// ==========================================================
-// Route::view('/catalogo', 'pages.catalog.ferronova-catalog')->name('catalog');
-// Route::view('/proyectos', 'pages.projects.ferronova-projects')->name('projects');
-// Route::view('/nosotros', 'pages.about.ferronova-about')->name('about');

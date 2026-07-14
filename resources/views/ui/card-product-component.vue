@@ -475,9 +475,9 @@ const getBadgeText = (badge) => {
                         {{ getBadgeText(product.badge) }}
                     </span>
                     <span v-if="product.discount"
-                        class="text-[9px] sm:text-[10px] font-description font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-ferro-danger text-white"
+                        class="text-[9px] sm:text-[10px] font-description font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-ferro-danger text-white"
                         style="font-family: var(--font-description);">
-                        -{{ product.discount }}%
+                        -{{ product.discount }}% · DESCUENTO
                     </span>
                 </div>
             </div>
