@@ -30,7 +30,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-6">
 
                 {{-- SERVICIO 1: VENTA POR UNIDAD --}}
-                <div class="group bg-ferro-white rounded-[28px] p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
+                <div class="group bg-ferro-white rounded-sm p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
                     <div class="w-14 h-14 rounded-2xl bg-ferro-steel-100 text-ferro-carbon-900 flex items-center justify-center mb-5">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10" />
@@ -47,7 +47,7 @@
                 </div>
 
                 {{-- SERVICIO 2: VENTA DE MAQUINARIA --}}
-                <div class="group bg-ferro-white rounded-[28px] p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
+                <div class="group bg-ferro-white rounded-sm p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
                     <div class="w-14 h-14 rounded-2xl bg-ferro-steel-100 text-ferro-carbon-900 flex items-center justify-center mb-5">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -65,7 +65,7 @@
                 </div>
 
                 {{-- SERVICIO 3: ALQUILER DE EQUIPOS --}}
-                <div class="group bg-ferro-white rounded-[28px] p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
+                <div class="group bg-ferro-white rounded-sm p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
                     <div class="w-14 h-14 rounded-2xl bg-ferro-steel-100 text-ferro-carbon-900 flex items-center justify-center mb-5">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18.75z" />
@@ -83,7 +83,7 @@
                 </div>
 
                 {{-- SERVICIO 4: PRESTACIÓN DE SERVICIOS --}}
-                <div class="group bg-ferro-white rounded-[28px] p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
+                <div class="group bg-ferro-white rounded-sm p-8 ring-1 ring-ferro-carbon-900/5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-16px_rgba(15,23,42,0.10)] hover:-translate-y-1 hover:shadow-[0_1px_2px_rgba(15,23,42,0.04),0_24px_40px_-16px_rgba(15,23,42,0.14)] transition-all duration-300 flex flex-col items-start min-h-60">
                     <div class="w-14 h-14 rounded-2xl bg-ferro-steel-100 text-ferro-carbon-900 flex items-center justify-center mb-5">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h3.75m-3.75 0a3.75 3.75 0 01-3.75-3.75v-3.75A3.75 3.75 0 018.25 3h.75m0 12.75h3.75m-3.75 0v1.5A3.75 3.75 0 0111.25 21h3.75" />
