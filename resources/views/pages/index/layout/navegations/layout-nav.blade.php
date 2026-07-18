@@ -333,7 +333,7 @@
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium">Inicio</a>
                 <a href="{{ route('united') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden sm:inline">Por unidad</a>
-                <a href="#"
+                <a href="{{ route('category') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium">Catálogo</a>
                 <a href="#"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden sm:inline">Proyectos</a>
@@ -382,7 +382,7 @@
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Inicio</a>
                 <a href="{{ route('united') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Por unidad</a>
-                <a href="#"
+                <a href="{{ route('category') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Catálogo</a>
                 <a href="#"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Proyectos</a>

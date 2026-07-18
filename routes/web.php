@@ -24,6 +24,13 @@ Route::get('/sobre-nosotros', function () {
 })->name('about');
 
 // ==========================================================
+// CATÁLOGO
+// ==========================================================
+Route::get('/catalogo', function () {
+    return view('pages.index.category.ferronova-category');
+})->name('category');
+
+// ==========================================================
 // CONTACTO
 // ==========================================================
 Route::get('/contacto', function () {
