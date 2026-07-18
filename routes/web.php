@@ -24,6 +24,13 @@ Route::get('/sobre-nosotros', function () {
 })->name('about');
 
 // ==========================================================
+// CONTACTO
+// ==========================================================
+Route::get('/contacto', function () {
+    return view('pages.index.contact.ferronova-contact');
+})->name('contact');
+
+// ==========================================================
 // AUTENTICACIÓN (SOLO VISTAS)
 // ==========================================================
 Route::get('/login', function () {
