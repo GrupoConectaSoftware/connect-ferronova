@@ -1,3 +1,11 @@
+<div
+    x-data="{ visible: false }"
+    x-cloak
+    x-init="$nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item, index) => { item.style.transitionDelay = (index * 100) + 'ms'; item.classList.add('opacity-0', 'translate-y-10', 'scale-95', 'transition-all', 'duration-700', 'ease-out') }))"
+    x-intersect="visible = true; $nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item) => { item.classList.remove('opacity-0', 'translate-y-10', 'scale-95'); item.classList.add('opacity-100', 'translate-y-0', 'scale-100') }))"
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    class="transition-all duration-700 ease-out"
+>
 {{-- ==========================================================
     SECCIÓN: VALORES CORPORATIVOS
     FERRANOVA · ERP Industrial para Ferreterías
@@ -49,7 +57,7 @@
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 grayscale-25 group-hover:grayscale-0 image-loading" loading="lazy" decoding="async">
 
                     <div
-                        class="absolute inset-0 bg-linear-to-t from-ferro-carbon-900/85 via-ferro-carbon-900/10 to-transparent">
+                        class="absolute inset-0 bg-linear-to-t from-ferro-steel-900/85 via-ferro-steel-900/10 to-transparent">
                     </div>
 
                     {{-- Esquinas técnicas · visor de referencia --}}
@@ -228,3 +236,4 @@
         </div>
     </div>
 </section>
+</div>

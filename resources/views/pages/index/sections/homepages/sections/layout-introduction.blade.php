@@ -1,3 +1,5 @@
+<div x-cloak x-init="$el.classList.remove('opacity-0')"
+    class="opacity-0 transition-opacity duration-500 ease-out">
 {{-- ==========================================================
     SECCIÓN: INTRODUCCIÓN CON CARRUSEL DE FONDO
     ========================================================== --}}
@@ -87,7 +89,7 @@
 
                     {{-- BOTONES --}}
                     <div class="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
-                        <a href="#"
+                        <a href="{{ route('category') }}"
                             class="bg-ferro-yellow-500 hover:bg-ferro-yellow-700 text-ferro-black
                       px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg
                       text-xs sm:text-sm font-heading font-bold
@@ -95,7 +97,7 @@
                             Ver catálogo →
                         </a>
 
-                        <a href="#"
+                        <a href="{{ route('category') }}#catalog-content"
                             class="bg-ferro-white/10 hover:bg-ferro-white/20 text-ferro-white
                       border border-ferro-white/20 hover:border-ferro-white/40
                       px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg
@@ -119,3 +121,4 @@
     </div>
 
 </section>
+</div>

@@ -1,9 +1,9 @@
 <script setup>
 import { computed, ref } from 'vue'
 import BtnVisualizar from '../../buttons/view/BtnVisualizar.vue'
-import BtnCart from '../../buttons/BtnCart.vue'
-import BtnHeart from '../../buttons/BtnHeart.vue'
-import BtnWhatsapp from '../../buttons/BtnWhatsapp.vue'
+import BtnCart from '../../buttons/shopping/BtnCart.vue'
+import BtnHeart from '../../buttons/heart/BtnHeart.vue'
+import BtnWhatsapp from '../../buttons/quote/BtnWhatsapp.vue'
 
 const props = defineProps({ layout: { type: String, default: 'catalog' } })
 const rentals = ref([

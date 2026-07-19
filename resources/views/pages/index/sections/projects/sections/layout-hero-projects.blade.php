@@ -1,3 +1,5 @@
+<div x-cloak x-init="$nextTick(() => $el.classList.remove('opacity-0'))"
+    class="opacity-0 transition-opacity duration-500 ease-out">
 {{-- ==========================================================
     SECCIÓN 1: HERO DE PROYECTOS
     ========================================================== --}}
@@ -40,3 +42,4 @@
         </header>
     </div>
 </section>
+</div>

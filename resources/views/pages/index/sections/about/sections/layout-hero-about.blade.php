@@ -1,3 +1,5 @@
+<div x-cloak x-init="$el.classList.remove('opacity-0')"
+    class="opacity-0 transition-opacity duration-500 ease-out">
 {{-- ==========================================================
     SECCIÓN 1: HERO INTRODUCTORIO (SOBRE NOSOTROS)
     ========================================================== --}}
@@ -33,3 +35,4 @@
         </header>
     </div>
 </section>
+</div>

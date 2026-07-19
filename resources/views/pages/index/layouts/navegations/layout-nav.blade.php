@@ -248,9 +248,9 @@
         <div class="flex items-center justify-between py-3 border-b border-ferro-carbon-100">
 
             {{-- LOGO --}}
-            <a href="/" class="shrink" aria-label="Volver al inicio de FERRANOVA">
+            <a href="{{ route('home') }}" class="shrink-0">
                 <img src="{{ asset('asset/logos/logoOficial.png') }}" alt="FERRANOVA - ERP Industrial"
-                    class="h-8 sm:h-10 md:h-12 w-auto object-contain image-loading" loading="lazy" decoding="async">
+                    class="h-8 sm:h-10 md:h-12 w-auto object-contain" loading="lazy">
             </a>
 
             {{-- BARRA DE BÚSQUEDA (solo desktop) --}}

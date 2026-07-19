@@ -1,3 +1,5 @@
+<div x-cloak x-init="$nextTick(() => $el.classList.remove('opacity-0'))"
+    class="opacity-0 transition-opacity duration-500 ease-out">
 {{-- HERO PREMIUM --}}
 <section class="relative z-10 w-full h-140 lg:h-162.5 overflow-hidden bg-ferro-carbon-900" aria-labelledby="hero-title">
     <figure class="absolute inset-0 w-full h-full">
@@ -96,4 +98,5 @@
             </ul>
         </div>
     </section>
+</div>
 </div>

@@ -1,3 +1,11 @@
+<div
+    x-data="{ visible: false }"
+    x-cloak
+    x-init="$nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item, index) => { item.style.transitionDelay = (index * 100) + 'ms'; item.classList.add('opacity-0', 'translate-y-10', 'scale-95', 'transition-all', 'duration-700', 'ease-out') }))"
+    x-intersect="visible = true; $nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item) => { item.classList.remove('opacity-0', 'translate-y-10', 'scale-95'); item.classList.add('opacity-100', 'translate-y-0', 'scale-100') }))"
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    class="transition-all duration-700 ease-out"
+>
 {{-- ==========================================================
     SECCIÓN: LO MÁS SOLICITADO
     ========================================================== --}}
@@ -73,3 +81,4 @@
     </div>
 
 </section>
+</div>

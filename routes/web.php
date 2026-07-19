@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Route;
 // ==========================================================
 Route::prefix('index')->group(function () {
 
+    Route::redirect('/home', '/index');
+    Route::redirect('/contact', '/index/contacto');
+
     // PÁGINA PRINCIPAL
     Route::get('/', function () {
         return view('pages.index.sections.homepages.ferronova');

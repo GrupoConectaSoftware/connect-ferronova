@@ -1,3 +1,5 @@
+<div x-cloak x-init="$el.classList.remove('opacity-0')"
+    class="opacity-0 transition-opacity duration-500 ease-out">
 {{-- ==========================================================
     SECCIÓN 1: HERO DE CONTACTO (BOTONES RESPONSIVOS)
     ========================================================== --}}
@@ -49,3 +51,4 @@
         </header>
     </div>
 </section>
+</div>

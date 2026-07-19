@@ -1,3 +1,11 @@
+<div
+    x-data="{ visible: false }"
+    x-cloak
+    x-init="$nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item, index) => { item.style.transitionDelay = (index * 100) + 'ms'; item.classList.add('opacity-0', 'translate-y-10', 'scale-95', 'transition-all', 'duration-700', 'ease-out') }))"
+    x-intersect="visible = true; $nextTick(() => Array.from($el.querySelectorAll('[id$=-app] > * > *')).forEach((item) => { item.classList.remove('opacity-0', 'translate-y-10', 'scale-95'); item.classList.add('opacity-100', 'translate-y-0', 'scale-100') }))"
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    class="transition-all duration-700 ease-out"
+>
 {{-- ==========================================================
     SECCIÓN: VIDEO DE FONDO CON MENSAJE CORPORATIVO
     ========================================================== --}}
@@ -62,7 +70,7 @@
 
             {{-- BOTONES --}}
             <div class="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4 justify-center">
-                <a href="#"
+                <a href="{{ route('contact') }}"
                    class="bg-ferro-yellow-500 hover:bg-ferro-yellow-700 text-ferro-black
                           px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg
                           text-sm sm:text-base font-heading font-bold
@@ -70,7 +78,7 @@
                     Cotizar proyecto →
                 </a>
 
-                <a href="#"
+                <a href="{{ route('projects') }}"
                    class="bg-ferro-white/10 hover:bg-ferro-white/20 text-ferro-white
                           border border-ferro-white/20 hover:border-ferro-white/40
                           px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg
@@ -97,3 +105,4 @@
     </div>
 
 </section>
+</div>

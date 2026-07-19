@@ -22,8 +22,10 @@ import { createApp } from 'vue';
  */
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse';
+import intersect from '@alpinejs/intersect';
 window.Alpine = Alpine;
 Alpine.plugin(collapse);
+Alpine.plugin(intersect);
 
 /**
  * ==========================================================
@@ -41,7 +43,9 @@ import CardUnitedComponent from '../views/ui/sections/products/CardUnited.vue';
 import CardTeamComponent from '../views/ui/sections/teams/CardTeam.vue';
 import BtnLogin from '../views/ui/buttons/auth/BtnLogin.vue';
 import BtnRegister from '../views/ui/buttons/auth/BtnRegister.vue';
+import BtnGoogle from '../views/ui/buttons/auth/BtnGoogle.vue';
 import CardProjects from '../views/ui/sections/projects/CardProject.vue';
+import CardBlog from '../views/ui/sections/blog/CardBlog.vue';
 
 /**
  * Pequeño helper: monta una app Vue en un id solo si ese id
@@ -74,11 +78,6 @@ mountIfPresent('#featured-app', 'card-product-component', CardProductComponent);
  * ==========================================================
  * APP 2b: MAQUINARIA & GRAN ESCALA (catálogo) — #heavy-products-app
  * ==========================================================
- * FIX: esta instancia faltaba. El layout del catálogo monta
- * <card-product-component> en id="heavy-products-app", pero antes
- * solo existía una instancia de CardProductComponent montada en
- * "#featured-app" (usada en el home). Como son elementos del DOM
- * distintos, cada uno necesita su propia instancia de Vue.
  */
 mountIfPresent('#heavy-products-app', 'card-product-component', CardProductComponent);
 
@@ -126,23 +125,42 @@ mountIfPresent('#united-products-app', 'card-united-component', CardUnitedCompon
 
 /**
  * ==========================================================
- * APP 9: CARRUSEL DE EQUIPO — #team-card-app
+ * APP 9: CARRUSEL DE EQUIPO (SOBRE NOSOTROS) — #team-card-app
  * ==========================================================
+ * CORREGIDO: Se agregó el montaje de CardTeamComponent porque faltaba.
  */
+mountIfPresent('#team-card-app', 'card-team-component', CardTeamComponent);
 
 /**
  * ==========================================================
- * APP 10: PROYECTOS
+ * APP 10: PROYECTOS — #projects-app
  * ==========================================================
  */
-const projectsApp = createApp({});
-projectsApp.component('card-projects', CardProjects);
-projectsApp.mount('#projects-app');
+mountIfPresent('#projects-app', 'card-projects', CardProjects);
 
-mountIfPresent('#team-card-app', 'card-team-component', CardTeamComponent);
+/**
+ * ==========================================================
+ * APP 11: BLOG (ÚLTIMO POST) — #last-blog-app
+ * ==========================================================
+ */
+mountIfPresent('#last-blog-app', 'card-blog', CardBlog);
 
+/**
+ * ==========================================================
+ * APP 12: BLOG (TODOS LOS POSTS) — #all-blog-app
+ * ==========================================================
+ */
+mountIfPresent('#all-blog-app', 'card-blog', CardBlog);
+
+/**
+ * ==========================================================
+ * BOTONES DE AUTENTICACIÓN
+ * ==========================================================
+ */
 mountIfPresent('#login-action-app', 'btn-login', BtnLogin);
 mountIfPresent('#register-action-app', 'btn-register', BtnRegister);
+mountIfPresent('#login-google-app', 'btn-google', BtnGoogle);
+mountIfPresent('#register-google-app', 'btn-google', BtnGoogle);
 
 /**
  * ==========================================================

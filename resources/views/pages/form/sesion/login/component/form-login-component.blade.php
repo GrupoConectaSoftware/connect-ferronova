@@ -55,9 +55,9 @@
         <span class="h-px flex-1 bg-ferro-carbon-100"></span>
     </div>
 
-    <button type="button" class="flex w-full items-center justify-center rounded-xl border border-ferro-carbon-100 bg-ferro-white px-4 py-2 font-body text-xs font-semibold text-ferro-carbon-700 transition-colors duration-200 hover:bg-ferro-steel-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-ferro-yellow-500">
-        Continuar con Google
-    </button>
+    <div id="login-google-app">
+        <btn-google></btn-google>
+    </div>
 
     <p class="mt-4 text-center font-body text-xs text-ferro-steel-500">
         ¿Aún no tienes cuenta?

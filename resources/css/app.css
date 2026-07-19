@@ -48,6 +48,10 @@
     --color-ferro-black: #020617;
 }
 
+[x-cloak] {
+    display: none !important;
+}
+
 button,
 [role="button"] {
     cursor: pointer;

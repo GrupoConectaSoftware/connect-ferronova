@@ -2,7 +2,14 @@
     FOOTER: FERRANOVA
     ========================================================== --}}
 
-<footer 
+<div
+    x-data="{ visible: false }"
+    x-intersect="visible = true"
+    x-cloak
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    class="transition-all duration-700 ease-out"
+>
+<footer
     class="w-full bg-ferro-carbon-900 relative overflow-hidden"
     role="contentinfo"
     aria-label="Pie de página de FERRANOVA"
@@ -49,10 +56,10 @@
                     Navegación
                 </h4>
                 <ul class="space-y-1.5 text-[11px] sm:text-xs text-ferro-white font-body">
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Inicio</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Catálogo</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Categorías</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Por unidad</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-ferro-yellow-500 transition-colors">Inicio</a></li>
+                    <li><a href="{{ route('category') }}" class="hover:text-ferro-yellow-500 transition-colors">Catálogo</a></li>
+                    <li><a href="{{ route('category') }}#catalog-content" class="hover:text-ferro-yellow-500 transition-colors">Categorías</a></li>
+                    <li><a href="{{ route('united') }}" class="hover:text-ferro-yellow-500 transition-colors">Por unidad</a></li>
                 </ul>
             </div>
 
@@ -62,10 +69,10 @@
                     Compañía
                 </h4>
                 <ul class="space-y-1.5 text-[11px] sm:text-xs text-ferro-white font-body">
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Nosotros</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Blog</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Contacto</a></li>
-                    <li><a href="#" class="hover:text-ferro-yellow-500 transition-colors">Panel admin</a></li>
+                    <li><a href="{{ route('about') }}" class="hover:text-ferro-yellow-500 transition-colors">Nosotros</a></li>
+                    <li><a href="{{ route('blog') }}" class="hover:text-ferro-yellow-500 transition-colors">Blog</a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-ferro-yellow-500 transition-colors">Contacto</a></li>
+                    <li><a href="{{ route('login') }}" class="hover:text-ferro-yellow-500 transition-colors">Panel admin</a></li>
                 </ul>
             </div>
 
@@ -162,3 +169,4 @@
     </div>
 
 </footer>
+</div>
