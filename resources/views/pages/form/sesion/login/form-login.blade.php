@@ -36,11 +36,6 @@
             <div class="absolute inset-0 flex flex-col justify-between p-10 lg:p-16">
                 
                 <div>
-                    <img 
-                        src="{{ asset('asset/logos/logoOficial.png') }}" 
-                        alt="FERRANOVA" 
-                        class="h-12 w-auto object-contain image-loading"
-                        loading="lazy" decoding="async">
                     <p class="text-ferro-steel-300 text-sm font-body mt-1" style="font-family: var(--font-body);">
                         Tu fuerza industrial.
                     </p>
@@ -64,8 +59,8 @@
                             <p class="text-ferro-steel-300 text-xs font-body">Empresas</p>
                         </div>
                         <div>
-                            <span class="text-ferro-yellow-500 text-xl font-heading font-bold">4.9★</span>
-                            <p class="text-ferro-steel-300 text-xs font-body">Calificación</p>
+                            <span class="text-ferro-yellow-500 text-xl font-heading font-bold">+65</span>
+                            <p class="text-ferro-steel-300 text-xs font-body">Proyectos</p>
                         </div>
                     </div>
                 </div>
