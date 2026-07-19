@@ -250,7 +250,7 @@
             {{-- LOGO --}}
             <a href="/" class="shrink" aria-label="Volver al inicio de FERRANOVA">
                 <img src="{{ asset('asset/logos/logoOficial.png') }}" alt="FERRANOVA - ERP Industrial"
-                    class="h-8 sm:h-10 md:h-12 w-auto object-contain" loading="lazy">
+                    class="h-8 sm:h-10 md:h-12 w-auto object-contain image-loading" loading="lazy" decoding="async">
             </a>
 
             {{-- BARRA DE BÚSQUEDA (solo desktop) --}}

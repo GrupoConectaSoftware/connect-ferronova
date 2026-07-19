@@ -10,24 +10,24 @@
         {{-- SLIDE 1 --}}
         <div class="absolute inset-0 transition-opacity duration-2000ms"
             x-bind:class="current === 0 ? 'opacity-100' : 'opacity-0'">
-            <img src="{{ asset('asset/sections/introduction/imagenUnoIntroduccion.jpg') }}"
-                class="w-full h-full object-cover" alt="FERRANOVA - Herramientas industriales" loading="lazy">
+            <img src="{{ asset('asset/sections/index-homepages/introduction/imagenUnoIntroduccion.webp') }}"
+                class="w-full h-full object-cover image-loading" alt="FERRANOVA - Herramientas industriales" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-black/75"></div>
         </div>
 
         {{-- SLIDE 2 --}}
         <div class="absolute inset-0 transition-opacity duration-2000ms"
             x-bind:class="current === 1 ? 'opacity-100' : 'opacity-0'">
-            <img src="{{ asset('asset/sections/introduction/imagenDosIntroduccion.jpg') }}"
-                class="w-full h-full object-cover" alt="FERRANOVA - Equipos industriales" loading="lazy">
+            <img src="{{ asset('asset/sections/index-homepages/introduction/imagenDosIntroduccion.webp') }}"
+                class="w-full h-full object-cover image-loading" alt="FERRANOVA - Equipos industriales" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-black/75"></div>
         </div>
 
         {{-- SLIDE 3 --}}
         <div class="absolute inset-0 transition-opacity duration-2000ms"
             x-bind:class="current === 2 ? 'opacity-100' : 'opacity-0'">
-            <img src="{{ asset('asset/sections/introduction/imagenTresIntroduccion.jpg') }}"
-                class="w-full h-full object-cover" alt="FERRANOVA - Materiales de construcción" loading="lazy">
+            <img src="{{ asset('asset/sections/index-homepages/introduction/imagenTresIntroduccion.webp') }}"
+                class="w-full h-full object-cover image-loading" alt="FERRANOVA - Materiales de construcción" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-black/75"></div>
         </div>
 

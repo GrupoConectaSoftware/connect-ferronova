@@ -9,9 +9,9 @@
 
         {{-- COLUMNA IZQUIERDA: IMAGEN (50vw EXACTO, 100vh EXACTO) --}}
         <div class="w-full lg:w-[50vw] h-screen p-0 m-0 bg-ferro-steel-900 relative shrink-0">
-            <img src="{{ asset('asset/sections/index-nosotros/split-about/imagen-split.png') }}" 
+            <img src="{{ asset('asset/sections/index-about/split-about/imagen-split.webp') }}"
                  alt="Vista industrial de FERRANOVA" 
-                 class="w-full h-full object-cover">
+                 class="w-full h-full object-cover image-loading" loading="lazy" decoding="async">
         </div>
 
         {{-- COLUMNA DERECHA: TEXTO Y MISIÓN/VISIÓN --}}

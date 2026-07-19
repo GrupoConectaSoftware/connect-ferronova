@@ -54,7 +54,7 @@
 
         {{-- PUNTO DE MONTAJE DEL COMPONENTE VUE (BOLSA CON SCROLL INFINITO OCULTO) --}}
         <div id="united-products-app" class="w-full sm:max-h-175 lg:max-h-150 sm:overflow-y-auto no-scrollbar">
-            <card-united-component></card-united-component>
+            <card-united-component layout="catalog"></card-united-component>
         </div>
 
     </div>

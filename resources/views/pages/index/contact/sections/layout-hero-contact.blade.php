@@ -4,9 +4,9 @@
 
 <section class="relative z-10 w-full h-140 lg:h-162.5 overflow-hidden bg-ferro-carbon-900" aria-labelledby="contact-title">
     <figure class="absolute inset-0 w-full h-full">
-        <img src="{{ asset('asset/sections/index-contact/imagen-contact.png') }}" 
+        <img src="{{ asset('asset/sections/index-contact/imagen-contact.webp') }}"
              alt="Fachada de FERRANOVA - Contáctanos" 
-             class="w-full h-full object-cover opacity-60" loading="lazy" decoding="async">
+             class="w-full h-full object-cover opacity-60 image-loading" loading="lazy" decoding="async">
         
         {{-- Degradado 100% Negro (Sin azul) --}}
         <div class="absolute inset-0 bg-linear-to-r from-ferro-steel-900/95 via-ferro-steel-900/70 to-transparent" aria-hidden="true"></div>

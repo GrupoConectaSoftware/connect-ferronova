@@ -4,7 +4,7 @@
 
 <section class="relative z-10 w-full h-140 lg:h-162.5 overflow-hidden bg-ferro-carbon-900" aria-labelledby="hero-title">
     <figure class="absolute inset-0 w-full h-full">
-        <img src="{{ asset('asset/sections/index-nosotros/hero-about/imagen-about.png') }}" alt="Fachada de FERRANOVA, tu aliado industrial" class="w-full h-full object-cover opacity-60" loading="lazy" decoding="async">
+        <img src="{{ asset('asset/sections/index-about/hero-about/imagen-about.webp') }}" alt="Fachada de FERRANOVA, tu aliado industrial" class="w-full h-full object-cover opacity-60 image-loading" loading="lazy" decoding="async">
         
         <div class="absolute inset-0 bg-linear-to-r from-ferro-steel-900/95 via-ferro-steel-900/70 to-transparent" aria-hidden="true"></div>
         <div class="absolute inset-0 bg-linear-to-t from-ferro-steel-900/90 via-transparent to-transparent" aria-hidden="true"></div>

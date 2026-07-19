@@ -65,8 +65,8 @@
                 }
             </style>
 
-            <div id="featured-app" class="flex gap-3 sm:gap-6">
-                <card-product-component></card-product-component>
+            <div id="featured-app" class="min-w-full">
+                <card-product-component layout="carousel"></card-product-component>
             </div>
         </div>
 

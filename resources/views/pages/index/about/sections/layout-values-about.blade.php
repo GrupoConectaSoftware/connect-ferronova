@@ -44,9 +44,9 @@
                 {{-- CELDA 1 · HERO — IMAGEN INDUSTRIAL — col-span-5 row-span-2 --}}
                 <div
                     class="relative lg:col-span-5 lg:row-span-2 rounded-[28px] overflow-hidden shadow-[0_20px_50px_-15px_rgba(15,23,42,0.35)] group min-h-95 lg:min-h-0">
-                    <img src="{{ asset('asset/sections/index-nosotros/value-about/imagen-value.png') }}"
+                    <img src="{{ asset('asset/sections/index-about/value-about/imagen-value.webp') }}"
                         alt="Bodega FERRANOVA"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 grayscale-25 group-hover:grayscale-0">
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 grayscale-25 group-hover:grayscale-0 image-loading" loading="lazy" decoding="async">
 
                     <div
                         class="absolute inset-0 bg-linear-to-t from-ferro-carbon-900/85 via-ferro-carbon-900/10 to-transparent">

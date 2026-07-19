@@ -28,9 +28,8 @@
             <img 
                 src="{{ asset('asset/form/login/imagen-login.jpg') }}" 
                 alt="FERRANOVA - Iniciar sesión" 
-                class="w-full h-full object-cover opacity-40"
-                loading="lazy"
-            >
+                class="w-full h-full object-cover opacity-40 image-loading"
+                loading="lazy" decoding="async">
             
             <div class="absolute inset-0 bg-linear-to-t from-ferro-black/90 via-ferro-black/40 to-transparent"></div>
 
@@ -40,9 +39,8 @@
                     <img 
                         src="{{ asset('asset/logos/logoOficial.png') }}" 
                         alt="FERRANOVA" 
-                        class="h-12 w-auto object-contain"
-                        loading="lazy"
-                    >
+                        class="h-12 w-auto object-contain image-loading"
+                        loading="lazy" decoding="async">
                     <p class="text-ferro-steel-300 text-sm font-body mt-1" style="font-family: var(--font-body);">
                         Tu fuerza industrial.
                     </p>
@@ -82,11 +80,11 @@
             LADO DERECHO: FORMULARIO (50%)
             EN MOBILE/TABLET OCUPA EL 100%
             ========================================================== --}}
-        <div class="w-full lg:w-1/2 flex items-center justify-center px-6 py-6 sm:px-10 lg:px-12 bg-ferro-white overflow-y-auto">
-            <div class="w-full max-w-md py-2">
+        <div class="flex h-full w-full items-center justify-center overflow-hidden bg-ferro-white px-5 py-4 sm:px-8 lg:w-1/2 lg:px-12">
+            <div class="w-full max-w-md">
                 
                 {{-- BOTÓN VOLVER (visible en todas las pantallas) --}}
-                <div class="mb-4">
+                <div class="mb-3">
                     <a 
                         href="{{ route('home') }}" 
                         class="inline-flex items-center gap-2 text-ferro-steel-500 hover:text-ferro-yellow-500 transition-colors text-sm font-medium font-body"

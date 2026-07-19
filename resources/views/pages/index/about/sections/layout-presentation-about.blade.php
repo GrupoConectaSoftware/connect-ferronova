@@ -19,17 +19,17 @@
                                
                 {{-- IMAGEN CENTRAL (GIGANTE) --}}
                 <div class="absolute top-0 -left-4 w-[calc(100%+2rem)] h-full rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-10 border-[6px] border-ferro-white">
-                    <img src="{{ asset('asset/sections/index-nosotros/presentation-about/imagen-presentation.png') }}" alt="Vista panorámica de la ferretería" class="w-full h-full object-cover grayscale-50 transition-all duration-700 hover:grayscale-0">
+                    <img src="{{ asset('asset/sections/index-about/presentation-about/imagen-presentation.webp') }}" alt="Vista panorámica de la ferretería" class="w-full h-full object-cover grayscale-50 transition-all duration-700 hover:grayscale-0 image-loading" loading="lazy" decoding="async">
                 </div>
 
                 {{-- IMAGEN SUPERIOR IZQUIERDA (MÁS GRANDE Y MÁS ATRASADA) --}}
                 <div class="absolute -top-8 -left-12 w-[52%] aspect-square rounded-2xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.10)] z-20 border-[6px] border-ferro-white transform -rotate-2 hover:rotate-0 transition-transform duration-500">
-                    <img src="{{ asset('asset/sections/index-nosotros/presentation-about/imagen-presentation-dos.png') }}" alt="Estantería de herramientas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('asset/sections/index-about/presentation-about/imagen-presentation-dos.webp') }}" alt="Estantería de herramientas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 image-loading" loading="lazy" decoding="async">
                 </div>
 
                 {{-- IMAGEN INFERIOR IZQUIERDA (MÁS PEQUEÑA Y MÁS ADELANTADA) --}}
                 <div class="absolute bottom-6 -left-8 w-[38%] aspect-square rounded-2xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.10)] z-20 border-[6px] border-ferro-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <img src="{{ asset('asset/sections/index-nosotros/presentation-about/imagen-presentation-tres.png') }}" alt="Maquinaria industrial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('asset/sections/index-about/presentation-about/imagen-presentation-tres.webp') }}" alt="Maquinaria industrial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 image-loading" loading="lazy" decoding="async">
                 </div>
 
                 {{-- CHAPA FLOTANTE DE AÑOS --}}

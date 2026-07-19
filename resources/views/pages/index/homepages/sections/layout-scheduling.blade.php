@@ -32,11 +32,9 @@
             - Mobile: scroll horizontal (1 fila)
             - Desktop: grid con altura limitada (2 filas + mitad de la tercera)
             ========================================================== --}}
-        <div class="sm:max-h-[calc(3*300px+2rem)] sm:overflow-y-auto sm:pr-2"
-             style="scrollbar-width: thin; scrollbar-color: #FACC15 #E5E7EB;"
-        >
+        <div class="w-full">
             <div id="scheduling-app">
-                <card-scheduling-component></card-scheduling-component>
+                <card-scheduling-component layout="catalog"></card-scheduling-component>
             </div>
         </div>
 

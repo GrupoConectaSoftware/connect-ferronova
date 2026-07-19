@@ -5,9 +5,9 @@
 <section class="relative z-10 w-full h-140 lg:h-162.5 overflow-hidden bg-ferro-carbon-900" aria-labelledby="catalog-title">
     <figure class="absolute inset-0 w-full h-full">
         {{-- La imagen de la bodega/estantería que enviaste --}}
-        <img src="{{ asset('asset/sections/index-category/imagen-category.jpg') }}" 
+        <img src="{{ asset('asset/sections/index-homepages/category/imagen-category.webp') }}"
              alt="Bodega de herramientas y maquinaria FERRANOVA" 
-             class="w-full h-full object-cover opacity-60" loading="lazy" decoding="async">
+             class="w-full h-full object-cover opacity-60 image-loading" loading="lazy" decoding="async">
         
         {{-- Degradado 100% Negro (El de siempre, sin azul) --}}
         <div class="absolute inset-0 bg-linear-to-r from-ferro-steel-900/95 via-ferro-steel-900/70 to-transparent" aria-hidden="true"></div>

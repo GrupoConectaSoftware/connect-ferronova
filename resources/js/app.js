@@ -2,7 +2,6 @@
  * ==========================================================
  * BOOTSTRAP LARAVEL
  * ==========================================================
- * Carga las configuraciones base de Laravel.
  */
 import './bootstrap';
 
@@ -17,133 +16,129 @@ import { createApp } from 'vue';
  * ==========================================================
  * ALPINE.JS
  * ==========================================================
+ * Nota: si usas x-collapse y x-cloak en el layout del catálogo,
+ * asegúrate de tener instalado y registrado el plugin @alpinejs/collapse:
+ *   npm install @alpinejs/collapse
  */
 import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse';
 window.Alpine = Alpine;
+Alpine.plugin(collapse);
 
 /**
  * ==========================================================
  * COMPONENTES VUE
  * ==========================================================
  */
-import CardStatisticComponent from '../views/ui/card-statistic-component.vue';
-import CardProductComponent from '../views/ui/card-product-component.vue';
-import CardCategoryComponent from '../views/ui/card-category-component.vue';
-import CardAdvantageComponent from '../views/ui/card-advantage-component.vue';
-import CardSchedulingComponent from '../views/ui/card-scheduling-component.vue';
-import CardBrandComponent from '../views/ui/card-brand-component.vue';
-import CardFeedbackComponent from '../views/ui/card-feedback-component.vue';
-import CardUnitedComponent from '../views/ui/card-united-component.vue';
-import CardTeamComponent from '../views/ui/card-team-component.vue';
+import CardStatisticComponent from '../views/ui/sections/statistic/CardStatistic.vue';
+import CardProductComponent from '../views/ui/sections/products/CardProduct.vue';
+import CardCategoryComponent from '../views/ui/sections/category/CardCategory.vue';
+import CardAdvantageComponent from '../views/ui/sections/advantage/CardAdvantage.vue';
+import CardSchedulingComponent from '../views/ui/sections/products/CardScheduling.vue';
+import CardBrandComponent from '../views/ui/sections/brand/CardBrand.vue';
+import CardFeedbackComponent from '../views/ui/sections/feedback/CardFeedback.vue';
+import CardUnitedComponent from '../views/ui/sections/products/CardUnited.vue';
+import CardTeamComponent from '../views/ui/sections/teams/CardTeam.vue';
+import BtnLogin from '../views/ui/buttons/auth/BtnLogin.vue';
+import BtnRegister from '../views/ui/buttons/auth/BtnRegister.vue';
+
+/**
+ * Pequeño helper: monta una app Vue en un id solo si ese id
+ * existe en la página actual. Evita errores en consola en las
+ * rutas donde una sección determinada no está presente, y evita
+ * "Failed to mount app: mount target selector returned null".
+ */
+function mountIfPresent(id, componentName, component) {
+    if (!document.querySelector(id)) return;
+    const app = createApp({});
+    app.component(componentName, component);
+    app.mount(id);
+}
 
 /**
  * ==========================================================
- * APP 1: ESTADÍSTICAS
+ * APP 1: ESTADÍSTICAS — #stats-app
  * ==========================================================
- * Se monta en el elemento con id "stats-app".
- * Muestra las métricas clave de FERRANOVA.
  */
-const statsApp = createApp({});
-statsApp.component('card-statistic-component', CardStatisticComponent);
-statsApp.mount('#stats-app');
+mountIfPresent('#stats-app', 'card-statistic-component', CardStatisticComponent);
 
 /**
  * ==========================================================
- * APP 2: PRODUCTOS DESTACADOS
+ * APP 2: PRODUCTOS DESTACADOS (home) — #featured-app
  * ==========================================================
- * Se monta en el elemento con id "featured-app".
- * Muestra el carrusel de productos recomendados.
  */
-const featuredApp = createApp({});
-featuredApp.component('card-product-component', CardProductComponent);
-featuredApp.mount('#featured-app');
+mountIfPresent('#featured-app', 'card-product-component', CardProductComponent);
 
 /**
  * ==========================================================
- * APP 3: CATEGORÍAS DESTACADAS
+ * APP 2b: MAQUINARIA & GRAN ESCALA (catálogo) — #heavy-products-app
  * ==========================================================
- * Se monta en el elemento con id "categories-app".
- * Muestra el carrusel de categorías con imagen de fondo.
+ * FIX: esta instancia faltaba. El layout del catálogo monta
+ * <card-product-component> en id="heavy-products-app", pero antes
+ * solo existía una instancia de CardProductComponent montada en
+ * "#featured-app" (usada en el home). Como son elementos del DOM
+ * distintos, cada uno necesita su propia instancia de Vue.
  */
-const categoriesApp = createApp({});
-categoriesApp.component('card-category-component', CardCategoryComponent);
-categoriesApp.mount('#categories-app');
+mountIfPresent('#heavy-products-app', 'card-product-component', CardProductComponent);
 
 /**
  * ==========================================================
- * APP 4: VENTAJAS Y BENEFICIOS
+ * APP 3: CATEGORÍAS DESTACADAS — #categories-app
  * ==========================================================
- * Se monta en el elemento con id "advantages-app".
- * Muestra las ventajas competitivas de FERRANOVA.
  */
-const advantagesApp = createApp({});
-advantagesApp.component('card-advantage-component', CardAdvantageComponent);
-advantagesApp.mount('#advantages-app');
+mountIfPresent('#categories-app', 'card-category-component', CardCategoryComponent);
 
 /**
  * ==========================================================
- * APP 5: AGENDAMIENTO / ALQUILER
+ * APP 4: VENTAJAS Y BENEFICIOS — #advantages-app
  * ==========================================================
- * Se monta en el elemento con id "scheduling-app".
- * Muestra el catálogo de equipos para alquiler.
  */
-const schedulingApp = createApp({});
-schedulingApp.component('card-scheduling-component', CardSchedulingComponent);
-schedulingApp.mount('#scheduling-app');
+mountIfPresent('#advantages-app', 'card-advantage-component', CardAdvantageComponent);
 
 /**
  * ==========================================================
- * APP 6: MARCAS ALIADAS
+ * APP 5: AGENDAMIENTO / ALQUILER — #scheduling-app
  * ==========================================================
  */
-const brandApp = createApp({});
-brandApp.component('card-brand-component', CardBrandComponent);
-brandApp.mount('#brand-app');
+mountIfPresent('#scheduling-app', 'card-scheduling-component', CardSchedulingComponent);
 
 /**
  * ==========================================================
- * APP 7: RESEÑAS VERIFICADAS
+ * APP 6: MARCAS ALIADAS — #brand-app
  * ==========================================================
  */
-const feedbackApp = createApp({});
-feedbackApp.component('card-feedback-component', CardFeedbackComponent);
-feedbackApp.mount('#feedback-app');
-
+mountIfPresent('#brand-app', 'card-brand-component', CardBrandComponent);
 
 /**
  * ==========================================================
- * APP 8: PRODUCTOS POR UNIDAD
+ * APP 7: RESEÑAS VERIFICADAS — #feedback-app
  * ==========================================================
  */
-const unitedProductsApp = createApp({});
-unitedProductsApp.component('card-united-component', CardUnitedComponent);
-unitedProductsApp.mount('#united-products-app')
-
+mountIfPresent('#feedback-app', 'card-feedback-component', CardFeedbackComponent);
 
 /**
  * ==========================================================
- * APP 9: CARRUSEL DE EQUIPO (MONTAJE DE LA CARD)
+ * APP 8: PRODUCTOS POR UNIDAD (catálogo) — #united-products-app
  * ==========================================================
  */
-const teamApp = createApp({});
-teamApp.component('card-team-component', CardTeamComponent);
-teamApp.mount('#team-card-app');
+mountIfPresent('#united-products-app', 'card-united-component', CardUnitedComponent);
 
+/**
+ * ==========================================================
+ * APP 9: CARRUSEL DE EQUIPO — #team-card-app
+ * ==========================================================
+ */
+mountIfPresent('#team-card-app', 'card-team-component', CardTeamComponent);
+
+mountIfPresent('#login-action-app', 'btn-login', BtnLogin);
+mountIfPresent('#register-action-app', 'btn-register', BtnRegister);
 
 /**
  * ==========================================================
  * INICIAR ALPINE
  * ==========================================================
- * Alpine se inicia después de Vue para evitar conflictos
- * y asegurar que las directivas x-data, x-show, etc.
- * funcionen correctamente.
+ * Alpine se inicia después de Vue para evitar conflictos.
  */
 Alpine.start();
 
-/**
- * ==========================================================
- * DEBUG (CONSOLA)
- * ==========================================================
- * Mensaje de confirmación para saber que todo cargó bien.
- */
 console.log('FERRANOVA - Vue + Alpine cargados correctamente');
