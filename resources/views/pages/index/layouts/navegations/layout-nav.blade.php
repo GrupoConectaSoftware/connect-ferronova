@@ -339,7 +339,7 @@
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden sm:inline">Proyectos</a>
                 <a href="{{ route('about') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden md:inline">Nosotros</a>
-                <a href="#"
+                <a href="{{ route('blog') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden lg:inline">Blog</a>
                 <a href="{{ route('contact') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors text-xs sm:text-sm whitespace-nowrap font-medium hidden lg:inline">Contacto</a>
@@ -388,7 +388,7 @@
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Proyectos</a>
                 <a href="{{ route('about') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Nosotros</a>
-                <a href="#"
+                <a href="{{ route('blog') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Blog</a>
                 <a href="{{ route('contact') }}"
                     class="text-ferro-steel-700 hover:text-ferro-yellow-500 hover:bg-ferro-yellow-50 transition-colors text-sm font-medium py-2.5 px-3 border border-ferro-carbon-100 rounded-lg text-center">Contacto</a>

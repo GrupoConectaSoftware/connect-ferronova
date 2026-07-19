@@ -17,26 +17,30 @@ Route::prefix('index')->group(function () {
         return view('pages.index.sections.united.ferronova-united');
     })->name('united');
 
-    // SOBRE NOSOTROS
-    Route::get('/sobre-nosotros', function () {
-        return view('pages.index.sections.about.ferronova-about');
-    })->name('about');
-
     // CATÁLOGO
     Route::get('/catalogo', function () {
         return view('pages.index.sections.category.ferronova-category');
     })->name('category');
-
-    // CONTACTO
-    Route::get('/contacto', function () {
-        return view('pages.index.sections.contact.ferronova-contact');
-    })->name('contact');
 
     // PROYECTOS
     Route::get('/proyectos', function () {
         return view('pages.index.sections.projects.ferronova-projects');
     })->name('projects');
 
+    // SOBRE NOSOTROS
+    Route::get('/sobre-nosotros', function () {
+        return view('pages.index.sections.about.ferronova-about');
+    })->name('about');
+
+    // BLOG
+    Route::get('/blog', function () {
+        return view('pages.index.sections.blog.ferronova-blog');
+    })->name('blog');
+
+    // CONTACTO
+    Route::get('/contacto', function () {
+        return view('pages.index.sections.contact.ferronova-contact');
+    })->name('contact');
 });
 
 // ==========================================================
