@@ -1,14 +1,14 @@
 {{-- ==========================================================
-    PLANTILLA MAESTRA: FERRONOVA - CONTACTO
+    PLANTILLA MAESTRA: FERRONOVA - CATÁLOGO
     ==========================================================
     Este es el archivo maestro que carga el layout completo
-    de la página de contacto de FERRANOVA.
+    de la página de catálogo de FERRANOVA.
     Incluye:
-    - Meta tags y SEO específicos para Contacto
+    - Meta tags y SEO específicos para Catálogo
     - Fuentes de Google (Space Grotesk, Inter, Plus Jakarta Sans)
     - Alpine.js para interactividad
     - Assets compilados con Vite (CSS + JS)
-    - Navegación y Footer global, y las secciones de Contacto
+    - Navegación y Footer global, y las secciones de Catálogo
     ========================================================== --}}
 
 <!DOCTYPE html>
@@ -17,10 +17,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacto | FERRANOVA</title>
-    <meta name="description" content="Cotizaciones a medida, asesoría técnica y alquiler de equipos. Comunícate con FERRANOVA y hablemos de tu proyecto.">
+    <title>Catálogo | FERRANOVA</title>
+    <meta name="description" content="Explora el catálogo de FERRANOVA. Filtra, busca y previsualiza cada producto como en una tienda profesional.">
     <link rel="canonical" href="{{ url()->current() }}">
-    <meta property="og:title" content="Contacto | FERRANOVA">
+    <meta property="og:title" content="Catálogo | FERRANOVA">
     <meta property="og:image" content="{{ asset('asset/logos/logoOficial.png') }}">
 
     {{-- FUENTES Y SCRIPTS --}}
@@ -35,25 +35,22 @@
 
     {{-- 1. NAVEGACIÓN GLOBAL --}}
     <div class="relative z-20 w-full">
-        @include('pages.index.layout.navegations.layout-nav')
+        @include('pages.index.layouts.navegations.layout-nav')
     </div>
 
     {{-- 2. CONTENIDO PRINCIPAL --}}
-    <main id="main-content" role="main" aria-label="Página de contacto FERRANOVA">
+    <main id="main-content" role="main" aria-label="Catálogo de productos FERRANOVA">
 
-        {{-- Sección 1: Hero de Contacto --}}
-        @include('pages.index.contact.sections.layout-hero-contact')
+        {{-- Sección 1: Hero de Catálogo --}}
+        @include('pages.index.sections.category.sections.layout-hero-category')
 
-        {{-- Sección 2: Formulario o Información de Contacto --}}
-        @include('pages.index.contact.sections.layout-form-contact')
-
-        {{-- Sección 3: Formulario o Información de Contacto --}}
-        @include('pages.index.contact.sections.layout map-contact')
+        {{-- Sección 2: Contenido del Catálogo (Categorías o Productos) --}}
+        @include('pages.index.sections.category.sections.layout-content-category')
 
     </main>
 
     {{-- 3. FOOTER GLOBAL --}}
-    @include('pages.index.layout.footer.layout-footer')
+    @include('pages.index.layouts.footer.layout-footer')
 
 </body>
 </html>

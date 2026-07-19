@@ -68,41 +68,41 @@
         
             {{-- NAVEGACIÓN --}}
             <div class="relative z-20 w-full">
-                @include('pages.index.layout.navegations.layout-nav')
+                @include('pages.index.layouts.navegations.layout-nav')
             </div>
 
             {{-- Sección de introducción: Span de badges (Textos promocionales), span de redes soaciales ,menu de navegacion, carrusel de imagenes --}}
-            @include('pages.index.homepages.sections.layout-hero')
+            @include('pages.index.sections.homepages.sections.layout-hero')
             
             {{-- Sección de estadísticas: 4 cards con datos de la empresa --}}
-            @include('pages.index.homepages.sections.layout-statistic')
+            @include('pages.index.sections.homepages.sections.layout-statistic')
 
             {{-- Sección de recomendaciones: cards con productos recomendados --}}
-            @include('pages.index.homepages.sections.layout-recommended')
+            @include('pages.index.sections.homepages.sections.layout-recommended')
 
             {{-- Sección de invitacion: se compone de n video y texto relacional encima para empresas grandes --}}
-            @include('pages.index.homepages.sections.layout-invitation')
+            @include('pages.index.sections.homepages.sections.layout-invitation')
 
             {{-- Sección de categorías: carrusel de categorias --}}
-            @include('pages.index.homepages.sections.layout-category')
+            @include('pages.index.sections.homepages.sections.layout-category')
 
             {{-- Sección de ventajas: carrusel de ventajas --}}
-            @include('pages.index.homepages.sections.layout-advantages')
+            @include('pages.index.sections.homepages.sections.layout-advantages')
 
             {{-- Sección de agendamiento: carrusel de equipos para alquilar --}}
-            @include('pages.index.homepages.sections.layout-scheduling')
+            @include('pages.index.sections.homepages.sections.layout-scheduling')
 
             {{-- Sección de CTA: invitación a cotizar o agendar asesoría --}}
-            @include('pages.index.homepages.sections.layout-cta')
+            @include('pages.index.sections.homepages.sections.layout-cta')
 
             {{-- Sección de marcas aliadas: carrusel de logos de marcas --}}
-            @include('pages.index.homepages.sections.layout-brand')
+            @include('pages.index.sections.homepages.sections.layout-brand')
 
             {{-- Sección de reseñas verificadas: carrusel de reseñas de clientes --}}
-            @include('pages.index.homepages.sections.layout-feedback')
+            @include('pages.index.sections.homepages.sections.layout-feedback')
 
             {{-- Sección de footer: links de navegación, redes sociales, copyright --}}
-            @include('pages.index.layout.footer.layout-footer')
+            @include('pages.index.layouts.footer.layout-footer')
     </main>
 
     {{-- ==========================================================

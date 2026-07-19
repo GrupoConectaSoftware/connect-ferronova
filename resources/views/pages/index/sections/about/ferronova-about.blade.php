@@ -36,37 +36,37 @@
 
     {{-- 1. NAVEGACIÓN GLOBAL --}}
     <div class="relative z-20 w-full">
-        @include('pages.index.layout.navegations.layout-nav')
+        @include('pages.index.layouts.navegations.layout-nav')
     </div>
 
     {{-- 2. CONTENIDO PRINCIPAL --}}
     <main id="main-content" role="main" aria-label="Sobre nosotros FERRANOVA">
 
         {{-- Sección 1: Hero --}}
-        @include('pages.index.about.sections.layout-hero-about')
+        @include('pages.index.sections.about.sections.layout-hero-about')
 
         {{-- Sección 2: Presentation (Quiénes somos) --}}
-        @include('pages.index.about.sections.layout-presentation-about')
+        @include('pages.index.sections.about.sections.layout-presentation-about')
 
         {{-- Sección 3: Time (Línea de trayectoria) --}}
-        @include('pages.index.about.sections.layout-time-about')
+        @include('pages.index.sections.about.sections.layout-time-about')
 
         {{-- Sección 4: Values (Bento grid) --}}
-        @include('pages.index.about.sections.layout-values-about')
+        @include('pages.index.sections.about.sections.layout-values-about')
 
         {{-- Sección 5: Services (Misión y Visión) --}}
-        @include('pages.index.about.sections.layout-services')
+        @include('pages.index.sections.about.sections.layout-services')
 
         {{-- Sección 6: Split (Imagen grande + info) --}}
-        @include('pages.index.about.sections.layout-split-about')
+        @include('pages.index.sections.about.sections.layout-split-about')
 
         {{-- Sección 7: Teams (Equipo de trabajo) --}}
-        @include('pages.index.about.sections.layout-teams-layout')
+        @include('pages.index.sections.about.sections.layout-teams-layout')
 
     </main>
 
     {{-- 3. FOOTER GLOBAL --}}
-    @include('pages.index.layout.footer.layout-footer')
+    @include('pages.index.layouts.footer.layout-footer')
 
 </body>
 </html>

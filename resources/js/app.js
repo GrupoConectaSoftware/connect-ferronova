@@ -41,6 +41,7 @@ import CardUnitedComponent from '../views/ui/sections/products/CardUnited.vue';
 import CardTeamComponent from '../views/ui/sections/teams/CardTeam.vue';
 import BtnLogin from '../views/ui/buttons/auth/BtnLogin.vue';
 import BtnRegister from '../views/ui/buttons/auth/BtnRegister.vue';
+import CardProjects from '../views/ui/sections/projects/CardProject.vue';
 
 /**
  * Pequeño helper: monta una app Vue en un id solo si ese id
@@ -128,6 +129,16 @@ mountIfPresent('#united-products-app', 'card-united-component', CardUnitedCompon
  * APP 9: CARRUSEL DE EQUIPO — #team-card-app
  * ==========================================================
  */
+
+/**
+ * ==========================================================
+ * APP 10: PROYECTOS
+ * ==========================================================
+ */
+const projectsApp = createApp({});
+projectsApp.component('card-projects', CardProjects);
+projectsApp.mount('#projects-app');
+
 mountIfPresent('#team-card-app', 'card-team-component', CardTeamComponent);
 
 mountIfPresent('#login-action-app', 'btn-login', BtnLogin);

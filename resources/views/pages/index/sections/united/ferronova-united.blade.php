@@ -40,22 +40,22 @@
 
     {{-- 1. NAVEGACIÓN GLOBAL --}}
     <div class="relative z-20 w-full">
-        @include('pages.index.layout.navegations.layout-nav')
+        @include('pages.index.layouts.navegations.layout-nav')
     </div>
 
     {{-- 2. CONTENIDO PRINCIPAL --}}
     <main id="main-content" role="main" aria-label="Módulo de productos por unidad de FERRANOVA">
 
         {{-- Sección 1: Hero + Beneficios (Importa el layout que tiene la imagen, el degradado y las cards) --}}
-        @include('pages.index.united.section.layout-hero-united')
+        @include('pages.index.sections.united.section.layout-hero-united')
 
         {{-- Sección 2: Catálogo con Filtros + Componente Vue --}}
-        @include('pages.index.united.section.layout-filter-united')
+        @include('pages.index.sections.united.section.layout-filter-united')
 
     </main>
 
     {{-- 3. FOOTER GLOBAL --}}
-    @include('pages.index.layout.footer.layout-footer')
+    @include('pages.index.layouts.footer.layout-footer')
 
 </body>
 </html>

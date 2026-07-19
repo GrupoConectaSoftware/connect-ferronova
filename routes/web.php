@@ -3,42 +3,44 @@
 use Illuminate\Support\Facades\Route;
 
 // ==========================================================
-// PÁGINA PRINCIPAL
+// GRUPO: PÁGINAS PÚBLICAS (URL: /index/...)
 // ==========================================================
-Route::get('/', function () {
-    return view('pages.index.homepages.ferronova');
-})->name('home');
+Route::prefix('index')->group(function () {
+
+    // PÁGINA PRINCIPAL
+    Route::get('/', function () {
+        return view('pages.index.sections.homepages.ferronova');
+    })->name('home');
+
+    // MÓDULO UNITED (POR UNIDAD)
+    Route::get('/por-unidad', function () {
+        return view('pages.index.sections.united.ferronova-united');
+    })->name('united');
+
+    // SOBRE NOSOTROS
+    Route::get('/sobre-nosotros', function () {
+        return view('pages.index.sections.about.ferronova-about');
+    })->name('about');
+
+    // CATÁLOGO
+    Route::get('/catalogo', function () {
+        return view('pages.index.sections.category.ferronova-category');
+    })->name('category');
+
+    // CONTACTO
+    Route::get('/contacto', function () {
+        return view('pages.index.sections.contact.ferronova-contact');
+    })->name('contact');
+
+    // PROYECTOS
+    Route::get('/proyectos', function () {
+        return view('pages.index.sections.projects.ferronova-projects');
+    })->name('projects');
+
+});
 
 // ==========================================================
-// MÓDULO UNITED (POR UNIDAD)
-// ==========================================================
-Route::get('/por-unidad', function () {
-    return view('pages.index.united.ferronova-united');
-})->name('united');
-
-// ==========================================================
-// SOBRE NOSOTROS
-// ==========================================================
-Route::get('/sobre-nosotros', function () {
-    return view('pages.index.about.ferronova-about');
-})->name('about');
-
-// ==========================================================
-// CATÁLOGO
-// ==========================================================
-Route::get('/catalogo', function () {
-    return view('pages.index.category.ferronova-category');
-})->name('category');
-
-// ==========================================================
-// CONTACTO
-// ==========================================================
-Route::get('/contacto', function () {
-    return view('pages.index.contact.ferronova-contact');
-})->name('contact');
-
-// ==========================================================
-// AUTENTICACIÓN (SOLO VISTAS)
+// AUTENTICACIÓN (LOGIN Y REGISTRO)
 // ==========================================================
 Route::get('/login', function () {
     return view('pages.form.sesion.login.form-login');
