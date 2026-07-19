@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FERRANOVA - ERP Industrial para Ferreterías y Construcción</title>
+    <title>FERRONOVA - ERP Industrial para Ferreterías y Construcción</title>
     <meta name="description" content="FERRANOVA es el ERP especializado para ferreterías y suministros industriales. Gestiona inventario, ventas, compras, clientes y maquinaria en una sola plataforma.">
     <meta name="keywords" content="ERP ferretería, software industrial, gestión de inventario, ventas, compras, maquinaria, construcción">
     <meta name="robots" content="index, follow">
