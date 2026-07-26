@@ -20,6 +20,14 @@ import {
     removeFromCart,
     updateCartQuantity,
 } from './cart';
+import {
+    FAVORITES_STORAGE_KEY,
+    FAVORITES_TOGGLE_EVENT,
+    FAVORITES_UPDATED_EVENT,
+    readFavorites,
+    removeFavorite,
+    toggleFavorite,
+} from './favorites';
 
 /**
  * ==========================================================
@@ -58,9 +66,14 @@ import CardBlog from '../views/components/ui/sections/blog/CardBlog.vue';
 import ToastNotification from '../views/components/ui/toasts/ToastNotification.vue';
 import BtnCheckoutWhatsapp from '../views/components/ui/buttons/quote/BtnCheckoutWhatsapp.vue';
 import BtnOnlinePayment from '../views/components/ui/buttons/payment/BtnOnlinePayment.vue';
+import FavoriteList from '../views/components/ui/sections/favorites/FavoriteList.vue';
 
 window.addEventListener(CART_ADD_EVENT, (event) => {
     if (event.detail?.product) addToCart(event.detail.product, event.detail.quantity);
+});
+
+window.addEventListener(FAVORITES_TOGGLE_EVENT, (event) => {
+    if (event.detail?.product) toggleFavorite(event.detail.product);
 });
 
 Alpine.store('cart', {
@@ -81,6 +94,24 @@ Alpine.store('cart', {
     },
     remove(key) {
         this.items = removeFromCart(key);
+    },
+});
+
+Alpine.store('favorites', {
+    items: readFavorites(),
+    get count() {
+        return this.items.length;
+    },
+    init() {
+        window.addEventListener(FAVORITES_UPDATED_EVENT, (event) => {
+            this.items = event.detail.items;
+        });
+        window.addEventListener('storage', (event) => {
+            if (event.key === FAVORITES_STORAGE_KEY) this.items = readFavorites();
+        });
+    },
+    remove(key) {
+        this.items = removeFavorite(key);
     },
 });
 
@@ -245,6 +276,7 @@ mountIfPresent('#login-google-app', 'btn-google', BtnGoogle);
 mountIfPresent('#register-google-app', 'btn-google', BtnGoogle);
 mountIfPresent('#checkout-whatsapp-app', 'btn-checkout-whatsapp', BtnCheckoutWhatsapp);
 mountIfPresent('#online-payment-app', 'btn-online-payment', BtnOnlinePayment);
+mountIfPresent('#favorites-list-app', 'favorite-list', FavoriteList);
 
 const toastRoot = document.createElement('div');
 toastRoot.id = 'toast-notification-app';

@@ -54,7 +54,7 @@ export function addToCart(product, quantity = 1) {
         detail: {
             type: 'success',
             title: 'Producto agregado',
-            message: `${incoming.name} se agregó al carrito.`,
+            message: 'Se ha agregado al carrito con éxito.',
         },
     }));
 
@@ -82,4 +82,3 @@ export function clearCart() {
 export function cartCount(items = readCart()) {
     return items.reduce((total, item) => total + item.qty, 0);
 }
-

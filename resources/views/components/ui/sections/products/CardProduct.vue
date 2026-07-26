@@ -26,18 +26,23 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
     <div
         :class="isCarousel
             ? 'flex w-max min-w-full gap-4 overflow-visible snap-x snap-mandatory sm:gap-6'
-            : 'grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5'"
+            : 'flex w-full snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-3 sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-3 lg:gap-5'"
     >
         <article
             v-for="product in products"
             :key="product.id"
-            :class="isCarousel ? 'w-[75vw] max-w-72.5 shrink-0 snap-start sm:w-70' : 'min-w-0'"
+            :class="isCarousel
+                ? 'w-[75vw] max-w-72.5 shrink-0 snap-start sm:w-70'
+                : 'w-[82vw] max-w-sm shrink-0 snap-start sm:w-auto sm:max-w-none sm:min-w-0'"
             class="ferro-card-entrance group flex h-full flex-col rounded-2xl border border-ferro-carbon-100/50 bg-ferro-white p-5 shadow-sm transition-colors duration-300 hover:border-ferro-yellow-500/40"
         >
             <div class="relative mb-4 aspect-4/3 overflow-hidden rounded-xl bg-ferro-steel-100">
                 <img :src="product.image" :alt="product.name" class="h-full w-full object-cover image-loading" loading="lazy" decoding="async">
-                <div class="absolute right-3 top-3 z-10 hidden origin-top-right flex-col gap-2 opacity-0 scale-90 transition-all duration-300 lg:flex lg:group-hover:scale-100 lg:group-hover:opacity-100">
-                        <BtnHeart variant="overlay" />
+                <div class="absolute right-3 top-3 z-10 flex origin-top-right scale-100 flex-col gap-2 opacity-100 transition-all duration-300 lg:scale-90 lg:opacity-0 lg:group-hover:scale-100 lg:group-hover:opacity-100">
+                        <BtnHeart
+                            variant="overlay"
+                            :product="{ ...product, key: `product-${product.id}`, type: 'product', brand: 'FERRANOVA' }"
+                        />
                         <BtnCart variant="overlay" :product="product" />
                         <BtnWhatsapp />
                 </div>

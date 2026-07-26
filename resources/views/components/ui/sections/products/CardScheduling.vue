@@ -1,7 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue'
 import BtnVisualizar from '../../buttons/view/BtnVisualizar.vue'
-import BtnCart from '../../buttons/shopping/BtnCart.vue'
 import BtnHeart from '../../buttons/heart/BtnHeart.vue'
 import BtnWhatsapp from '../../buttons/quote/BtnWhatsapp.vue'
 
@@ -19,19 +18,17 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
 </script>
 
 <template>
-    <div :class="isCarousel ? 'flex w-max min-w-full gap-4 overflow-visible snap-x snap-mandatory sm:gap-6' : 'grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5'">
-        <article v-for="rental in rentals" :key="rental.id" :class="isCarousel ? 'w-[75vw] max-w-72.5 shrink-0 snap-start sm:w-70' : 'min-w-0'" class="ferro-card-entrance group flex h-full flex-col overflow-hidden rounded-2xl border border-ferro-carbon-100/50 bg-ferro-white shadow-sm transition-colors duration-300 hover:border-ferro-yellow-500/40">
+    <div :class="isCarousel ? 'flex w-max min-w-full gap-4 overflow-visible snap-x snap-mandatory sm:gap-6' : 'flex w-full snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-3 sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0 lg:grid-cols-3 lg:gap-5'">
+        <article v-for="rental in rentals" :key="rental.id" :class="isCarousel ? 'w-[75vw] max-w-72.5 shrink-0 snap-start sm:w-70' : 'w-[82vw] max-w-sm shrink-0 snap-start sm:w-auto sm:max-w-none sm:min-w-0'" class="ferro-card-entrance group flex h-full flex-col overflow-hidden rounded-2xl border border-ferro-carbon-100/50 bg-ferro-white shadow-sm transition-colors duration-300 hover:border-ferro-yellow-500/40">
             <div class="relative aspect-4/3 overflow-hidden bg-ferro-steel-100">
                 <img :src="rental.image" :alt="rental.name" class="h-full w-full object-cover image-loading" loading="lazy" decoding="async">
-                <div class="absolute right-3 top-3 z-10 hidden origin-top-right flex-col gap-2 opacity-0 scale-90 transition-all duration-300 lg:flex lg:group-hover:scale-100 lg:group-hover:opacity-100">
-                    <BtnHeart variant="overlay" />
-                    <BtnCart
+                <div class="absolute right-3 top-3 z-10 flex origin-top-right scale-100 flex-col gap-2 opacity-100 transition-all duration-300 lg:scale-90 lg:opacity-0 lg:group-hover:scale-100 lg:group-hover:opacity-100">
+                    <BtnHeart
                         variant="overlay"
                         :product="{ ...rental, key: `rental-${rental.id}`, type: 'rental', price: rental.prices[1].value, brand: 'Alquiler por día' }"
                     />
                     <BtnWhatsapp />
                 </div>
-                <span class="absolute left-3 top-3 rounded-full bg-ferro-yellow-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-ferro-black">Alquiler</span>
             </div>
             <div class="flex flex-1 flex-col p-5">
                 <h3 class="min-h-11 line-clamp-2 font-heading text-base font-bold leading-snug text-ferro-carbon-900">{{ rental.name }}</h3>
