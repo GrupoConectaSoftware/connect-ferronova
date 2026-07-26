@@ -7,7 +7,7 @@
     x-intersect="visible = true"
     x-cloak
     :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
-    class="transition-all duration-700 ease-out"
+    class="duration-700 transition-all ease-out"
 >
 <footer
     class="w-full bg-ferro-carbon-900 relative overflow-hidden"

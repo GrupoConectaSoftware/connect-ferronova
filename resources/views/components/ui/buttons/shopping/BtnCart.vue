@@ -1,5 +1,5 @@
 <script setup>
-import { CART_ADD_EVENT } from '../../../../js/cart'
+import { CART_ADD_EVENT } from '../../../../../js/cart'
 
 const props = defineProps({
     variant: { type: String, default: 'light' },

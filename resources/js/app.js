@@ -41,23 +41,23 @@ Alpine.plugin(intersect);
  * COMPONENTES VUE
  * ==========================================================
  */
-import CardStatisticComponent from '../views/ui/sections/statistic/CardStatistic.vue';
-import CardProductComponent from '../views/ui/sections/products/CardProduct.vue';
-import CardCategoryComponent from '../views/ui/sections/category/CardCategory.vue';
-import CardAdvantageComponent from '../views/ui/sections/advantage/CardAdvantage.vue';
-import CardSchedulingComponent from '../views/ui/sections/products/CardScheduling.vue';
-import CardBrandComponent from '../views/ui/sections/brand/CardBrand.vue';
-import CardFeedbackComponent from '../views/ui/sections/feedback/CardFeedback.vue';
-import CardUnitedComponent from '../views/ui/sections/products/CardUnited.vue';
-import CardTeamComponent from '../views/ui/sections/teams/CardTeam.vue';
-import BtnLogin from '../views/ui/buttons/auth/BtnLogin.vue';
-import BtnRegister from '../views/ui/buttons/auth/BtnRegister.vue';
-import BtnGoogle from '../views/ui/buttons/auth/BtnGoogle.vue';
-import CardProjects from '../views/ui/sections/projects/CardProject.vue';
-import CardBlog from '../views/ui/sections/blog/CardBlog.vue';
-import ToastNotification from '../views/ui/toasts/ToastNotification.vue';
-import BtnCheckoutWhatsapp from '../views/ui/buttons/quote/BtnCheckoutWhatsapp.vue';
-import BtnOnlinePayment from '../views/ui/buttons/payment/BtnOnlinePayment.vue';
+import CardStatisticComponent from '../views/components/ui/sections/statistic/CardStatistic.vue';
+import CardProductComponent from '../views/components/ui/sections/products/CardProduct.vue';
+import CardCategoryComponent from '../views/components/ui/sections/category/CardCategory.vue';
+import CardAdvantageComponent from '../views/components/ui/sections/advantage/CardAdvantage.vue';
+import CardSchedulingComponent from '../views/components/ui/sections/products/CardScheduling.vue';
+import CardBrandComponent from '../views/components/ui/sections/brand/CardBrand.vue';
+import CardFeedbackComponent from '../views/components/ui/sections/feedback/CardFeedback.vue';
+import CardUnitedComponent from '../views/components/ui/sections/products/CardUnited.vue';
+import CardTeamComponent from '../views/components/ui/sections/teams/CardTeam.vue';
+import BtnLogin from '../views/components/ui/buttons/auth/BtnLogin.vue';
+import BtnRegister from '../views/components/ui/buttons/auth/BtnRegister.vue';
+import BtnGoogle from '../views/components/ui/buttons/auth/BtnGoogle.vue';
+import CardProjects from '../views/components/ui/sections/projects/CardProject.vue';
+import CardBlog from '../views/components/ui/sections/blog/CardBlog.vue';
+import ToastNotification from '../views/components/ui/toasts/ToastNotification.vue';
+import BtnCheckoutWhatsapp from '../views/components/ui/buttons/quote/BtnCheckoutWhatsapp.vue';
+import BtnOnlinePayment from '../views/components/ui/buttons/payment/BtnOnlinePayment.vue';
 
 window.addEventListener(CART_ADD_EVENT, (event) => {
     if (event.detail?.product) addToCart(event.detail.product, event.detail.quantity);

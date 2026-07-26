@@ -2,7 +2,7 @@
     COMPONENTE: RESUMEN DEL PEDIDO
     ========================================================== --}}
 
-<aside class="w-full min-w-0 rounded-2xl bg-ferro-white p-6 shadow-sm lg:p-8" aria-labelledby="order-summary-title">
+<aside class="min-w-0 w-full rounded-2xl bg-ferro-white p-6 shadow-sm lg:p-8" aria-labelledby="order-summary-title">
     <h3 id="order-summary-title" class="mb-6 font-heading text-xl font-bold tracking-tight text-ferro-carbon-900">
         Resumen del pedido
     </h3>

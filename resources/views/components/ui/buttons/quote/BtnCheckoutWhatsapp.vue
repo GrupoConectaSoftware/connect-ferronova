@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { CART_UPDATED_EVENT, readCart } from '../../../../js/cart'
+import { CART_UPDATED_EVENT, readCart } from '../../../../../js/cart'
 
 const items = ref(readCart())
 
@@ -62,4 +62,3 @@ onBeforeUnmount(() => window.removeEventListener(CART_UPDATED_EVENT, syncCart))
         <span>{{ isDisabled ? 'Agrega productos para continuar' : 'Finalizar por WhatsApp' }}</span>
     </a>
 </template>
-

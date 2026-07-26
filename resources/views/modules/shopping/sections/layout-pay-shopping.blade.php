@@ -83,7 +83,7 @@
 
             {{-- COLUMNA DERECHA (RESUMEN DEL PEDIDO) --}}
             <div class="w-full shrink-0 lg:w-[33%]">
-                @include('pages.shopping.components.component-pay-shopping')
+                @include('modules.shopping.components.component-pay-shopping')
             </div>
         </div>
     </div>

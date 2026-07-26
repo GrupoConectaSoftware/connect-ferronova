@@ -17,8 +17,13 @@ Route::prefix('index')->group(function () {
 
     // CARRITO DE COMPRAS
     Route::get('/carrito', function () {
-        return view('pages.shopping.ferronova-shopping');
+        return view('modules.shopping.ferronova-shopping');
     })->name('cart');
+
+    // FAVORITOS (HEART)
+    Route::get('/favoritos', function () {
+        return view('modules.heart.ferronova-heart');
+    })->name('heart');
 
     // MÓDULO UNITED (POR UNIDAD)
     Route::get('/por-unidad', function () {

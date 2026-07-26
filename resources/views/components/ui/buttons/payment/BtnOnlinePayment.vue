@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { CART_UPDATED_EVENT, readCart } from '../../../../js/cart'
+import { CART_UPDATED_EVENT, readCart } from '../../../../../js/cart'
 
 const items = ref(readCart())
 const isDisabled = computed(() => items.value.length === 0)

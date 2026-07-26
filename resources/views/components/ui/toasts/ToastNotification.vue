@@ -1,6 +1,6 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { TOAST_EVENT } from '../../../js/cart'
+import { TOAST_EVENT } from '../../../../js/cart'
 
 const toasts = ref([])
 let nextId = 0
@@ -80,4 +80,3 @@ onBeforeUnmount(() => {
         </TransitionGroup>
     </div>
 </template>
-

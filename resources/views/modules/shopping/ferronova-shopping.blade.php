@@ -25,22 +25,22 @@
 
     {{-- NAVEGACIÓN --}}
     <div class="relative z-20 w-full">
-        @include('pages.layouts.navegations.layout-nav')
+        @include('layouts.navegations.layout-nav')
     </div>
 
     {{-- CONTENIDO PRINCIPAL --}}
     <main id="main-content" role="main" aria-label="Carrito de compras FERRANOVA">
 
         {{-- Sección 1: Hero --}}
-        @include('pages.shopping.sections.layout-hero-shopping')
+        @include('modules.shopping.sections.layout-hero-shopping')
 
         {{-- Sección 2: Contenido del Carrito --}}
-        @include('pages.shopping.sections.layout-pay-shopping')
+        @include('modules.shopping.sections.layout-pay-shopping')
 
     </main>
 
     {{-- FOOTER --}}
-    @include('pages.layouts.footer.layout-footer')
+    @include('layouts.footer.layout-footer')
 
 </body>
 </html>

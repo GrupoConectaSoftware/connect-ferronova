@@ -2,7 +2,7 @@
     SECCIÓN 1: HERO DEL CARRITO
     ========================================================== --}}
 
-<section class="relative z-10 w-full h-140 lg:h-162.5 overflow-hidden bg-ferro-carbon-900" aria-labelledby="shopping-title">
+<section class="relative z-10 h-140 w-full overflow-hidden bg-ferro-carbon-900 lg:h-162.5" aria-labelledby="shopping-title">
     <figure class="absolute inset-0 w-full h-full">
         <img src="{{ asset('asset/sections/index-shopping/imagen-shopping.webp') }}"
              alt="Bodega de herramientas y maquinaria FERRANOVA"

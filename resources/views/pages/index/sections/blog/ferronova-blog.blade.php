@@ -25,7 +25,7 @@
 
     {{-- NAVEGACIÓN --}}
     <div class="relative z-20 w-full">
-        @include('pages.layouts.navegations.layout-nav')
+        @include('layouts.navegations.layout-nav')
     </div>
 
     {{-- CONTENIDO PRINCIPAL --}}
@@ -43,7 +43,7 @@
     </main>
 
     {{-- FOOTER --}}
-    @include('pages.layouts.footer.layout-footer')
+    @include('layouts.footer.layout-footer')
 
 </body>
 </html>
