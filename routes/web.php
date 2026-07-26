@@ -15,6 +15,11 @@ Route::prefix('index')->group(function () {
         return view('pages.index.sections.homepages.ferronova');
     })->name('home');
 
+    // CARRITO DE COMPRAS
+    Route::get('/carrito', function () {
+        return view('pages.shopping.ferronova-shopping');
+    })->name('cart');
+
     // MÓDULO UNITED (POR UNIDAD)
     Route::get('/por-unidad', function () {
         return view('pages.index.sections.united.ferronova-united');

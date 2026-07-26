@@ -34,7 +34,7 @@
 
     {{-- 1. NAVEGACIÓN GLOBAL --}}
     <div class="relative z-20 w-full">
-        @include('pages.index.layouts.navegations.layout-nav')
+        @include('pages.layouts.navegations.layout-nav')
     </div>
 
     {{-- 2. CONTENIDO PRINCIPAL --}}
@@ -49,7 +49,7 @@
     </main>
 
     {{-- 3. FOOTER GLOBAL --}}
-    @include('pages.index.layouts.footer.layout-footer')
+    @include('pages.layouts.footer.layout-footer')
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 {{-- ==========================================================
-    PLANTILLA MAESTRA: FERRANOVA - PROYECTOS
+    PLANTILLA MAESTRA: FERRANOVA - CARRITO DE COMPRAS
     ========================================================== --}}
 
 <!DOCTYPE html>
@@ -8,10 +8,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Proyectos | FERRANOVA</title>
-    <meta name="description" content="Descubre los proyectos de construcción e industrial donde FERRANOVA ha sido aliado estratégico.">
+    <title>Carrito de compras | FERRANOVA</title>
+    <meta name="description" content="Revisa tus productos y solicita la cotización final por WhatsApp.">
     <link rel="canonical" href="{{ url()->current() }}">
-    <meta property="og:title" content="Proyectos | FERRANOVA">
+    <meta property="og:title" content="Carrito de compras | FERRANOVA">
     <meta property="og:image" content="{{ asset('asset/logos/logoOficial.png') }}">
 
     {{-- FUENTES Y SCRIPTS --}}
@@ -29,13 +29,13 @@
     </div>
 
     {{-- CONTENIDO PRINCIPAL --}}
-    <main id="main-content" role="main" aria-label="Proyectos FERRANOVA">
+    <main id="main-content" role="main" aria-label="Carrito de compras FERRANOVA">
 
-        {{-- Sección 1: Hero de Proyectos --}}
-        @include('pages.index.sections.projects.sections.layout-hero-projects')
+        {{-- Sección 1: Hero --}}
+        @include('pages.shopping.sections.layout-hero-shopping')
 
-        {{-- Sección 2: Contenido (Filtros + Punto de montaje Vue) --}}
-        @include('pages.index.sections.projects.sections.layout-content-projects')
+        {{-- Sección 2: Contenido del Carrito --}}
+        @include('pages.shopping.sections.layout-pay-shopping')
 
     </main>
 

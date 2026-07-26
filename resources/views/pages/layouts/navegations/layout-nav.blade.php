@@ -286,7 +286,7 @@
                 </a>
 
                 {{-- Carrito --}}
-                <a href="#" class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors relative"
+                <a href="{{ route('cart') }}" class="text-ferro-steel-700 hover:text-ferro-yellow-500 transition-colors relative"
                     aria-label="Carrito de compras (0)" title="Carrito de compras">
                     <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         aria-hidden="true">
