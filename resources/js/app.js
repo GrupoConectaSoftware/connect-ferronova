@@ -11,6 +11,15 @@ import './bootstrap';
  * ==========================================================
  */
 import { createApp } from 'vue';
+import {
+    CART_ADD_EVENT,
+    CART_UPDATED_EVENT,
+    addToCart,
+    cartCount,
+    readCart,
+    removeFromCart,
+    updateCartQuantity,
+} from './cart';
 
 /**
  * ==========================================================
@@ -46,6 +55,79 @@ import BtnRegister from '../views/ui/buttons/auth/BtnRegister.vue';
 import BtnGoogle from '../views/ui/buttons/auth/BtnGoogle.vue';
 import CardProjects from '../views/ui/sections/projects/CardProject.vue';
 import CardBlog from '../views/ui/sections/blog/CardBlog.vue';
+import ToastNotification from '../views/ui/toasts/ToastNotification.vue';
+import BtnCheckoutWhatsapp from '../views/ui/buttons/quote/BtnCheckoutWhatsapp.vue';
+import BtnOnlinePayment from '../views/ui/buttons/payment/BtnOnlinePayment.vue';
+
+window.addEventListener(CART_ADD_EVENT, (event) => {
+    if (event.detail?.product) addToCart(event.detail.product, event.detail.quantity);
+});
+
+Alpine.store('cart', {
+    items: readCart(),
+    get count() {
+        return cartCount(this.items);
+    },
+    init() {
+        window.addEventListener(CART_UPDATED_EVENT, (event) => {
+            this.items = event.detail.items;
+        });
+        window.addEventListener('storage', (event) => {
+            if (event.key === 'ferro_cart') this.items = readCart();
+        });
+    },
+    updateQuantity(key, delta) {
+        this.items = updateCartQuantity(key, delta);
+    },
+    remove(key) {
+        this.items = removeFromCart(key);
+    },
+});
+
+Alpine.data('cartPage', () => ({
+    get items() {
+        return Alpine.store('cart').items;
+    },
+    get subtotal() {
+        return this.items.reduce((sum, item) => sum + (item.price * item.qty), 0);
+    },
+    get shippingCost() {
+        return this.items.length > 0 ? 25000 : 0;
+    },
+    get total() {
+        return this.subtotal + this.shippingCost;
+    },
+    formatPrice(value) {
+        return new Intl.NumberFormat('es-CO', {
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits: 0,
+        }).format(value);
+    },
+    updateQty(key, delta) {
+        Alpine.store('cart').updateQuantity(key, delta);
+    },
+    removeItem(key) {
+        Alpine.store('cart').remove(key);
+    },
+    get whatsappMessage() {
+        const lines = this.items.map((item, index) =>
+            `${index + 1}. ${item.name} (x${item.qty}) - ${this.formatPrice(item.price * item.qty)}`,
+        );
+        return encodeURIComponent([
+            'Hola FERRANOVA, quiero finalizar mi pedido:',
+            '',
+            ...lines,
+            '',
+            `Subtotal: ${this.formatPrice(this.subtotal)}`,
+            `Envío: ${this.formatPrice(this.shippingCost)}`,
+            `Total: ${this.formatPrice(this.total)}`,
+        ].join('\n'));
+    },
+    get whatsappLink() {
+        return `https://wa.me/573184111790?text=${this.whatsappMessage}`;
+    },
+}));
 
 /**
  * Pequeño helper: monta una app Vue en un id solo si ese id
@@ -161,6 +243,13 @@ mountIfPresent('#login-action-app', 'btn-login', BtnLogin);
 mountIfPresent('#register-action-app', 'btn-register', BtnRegister);
 mountIfPresent('#login-google-app', 'btn-google', BtnGoogle);
 mountIfPresent('#register-google-app', 'btn-google', BtnGoogle);
+mountIfPresent('#checkout-whatsapp-app', 'btn-checkout-whatsapp', BtnCheckoutWhatsapp);
+mountIfPresent('#online-payment-app', 'btn-online-payment', BtnOnlinePayment);
+
+const toastRoot = document.createElement('div');
+toastRoot.id = 'toast-notification-app';
+document.body.appendChild(toastRoot);
+createApp(ToastNotification).mount(toastRoot);
 
 /**
  * ==========================================================

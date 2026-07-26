@@ -24,7 +24,12 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
             <div class="relative aspect-4/3 overflow-hidden bg-ferro-steel-100">
                 <img :src="rental.image" :alt="rental.name" class="h-full w-full object-cover image-loading" loading="lazy" decoding="async">
                 <div class="absolute right-3 top-3 z-10 hidden origin-top-right flex-col gap-2 opacity-0 scale-90 transition-all duration-300 lg:flex lg:group-hover:scale-100 lg:group-hover:opacity-100">
-                    <BtnHeart variant="overlay" /><BtnCart variant="overlay" /><BtnWhatsapp />
+                    <BtnHeart variant="overlay" />
+                    <BtnCart
+                        variant="overlay"
+                        :product="{ ...rental, key: `rental-${rental.id}`, type: 'rental', price: rental.prices[1].value, brand: 'Alquiler por día' }"
+                    />
+                    <BtnWhatsapp />
                 </div>
                 <span class="absolute left-3 top-3 rounded-full bg-ferro-yellow-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-ferro-black">Alquiler</span>
             </div>
