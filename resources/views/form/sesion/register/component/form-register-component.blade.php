@@ -21,6 +21,14 @@
             <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Mínimo 8 caracteres" minlength="8" required class="mt-1.5 w-full rounded-xl border border-ferro-carbon-100 bg-ferro-steel-100/70 px-4 py-2 font-body text-sm text-ferro-carbon-900 outline-none transition-all duration-200 placeholder:text-ferro-steel-500 focus:border-ferro-yellow-500 focus:bg-ferro-white focus:ring-4 focus:ring-ferro-yellow-500/15">
         </div>
 
+        <label class="flex cursor-pointer items-start gap-2.5 text-[11px] leading-relaxed text-ferro-steel-500">
+            <input type="checkbox" name="data_treatment" required class="mt-0.5 h-4 w-4 shrink-0 rounded border-ferro-carbon-300 text-ferro-yellow-500 focus:ring-ferro-yellow-500">
+            <span>
+                Autorizo el tratamiento de mis datos personales conforme a la
+                <a href="{{ route('data.treatment') }}" target="_blank" class="font-semibold text-ferro-yellow-700 hover:text-ferro-yellow-900">política de tratamiento de datos</a>.
+            </span>
+        </label>
+
         <div id="register-action-app">
             <btn-register></btn-register>
         </div>

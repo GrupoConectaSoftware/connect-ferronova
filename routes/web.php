@@ -71,3 +71,33 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('form.sesion.register.form-register');
 })->name('register');
+
+// RECUPERACIÓN DE CUENTA — CLIENTE
+Route::get('/recuperar-contrasena', function () {
+    return view('form.sesion.recovery.form-forgot-password');
+})->name('password.request');
+
+Route::get('/verificar-codigo', function () {
+    return view('form.sesion.recovery.form-verify-code');
+})->name('password.code');
+
+Route::get('/restablecer-contrasena', function () {
+    return view('form.sesion.recovery.form-reset-password');
+})->name('password.reset.form');
+
+// POLÍTICAS — CLIENTE
+Route::get('/tratamiento-de-datos', function () {
+    return view('modules.legal.ferronova-data-treatment');
+})->name('data.treatment');
+
+Route::get('/terminos-y-condiciones', function () {
+    return view('modules.legal.ferronova-terms');
+})->name('legal.terms');
+
+Route::get('/politica-de-privacidad', function () {
+    return view('modules.legal.ferronova-privacy');
+})->name('legal.privacy');
+
+Route::get('/politica-de-garantias', function () {
+    return view('modules.legal.ferronova-warranty');
+})->name('legal.warranty');

@@ -26,7 +26,7 @@
         <div>
             <div class="flex items-center justify-between gap-4">
                 <label for="login-password" class="font-body text-sm font-semibold text-ferro-carbon-700">Contraseña</label>
-                <a href="#" class="font-body text-xs font-semibold text-ferro-yellow-700 transition-colors hover:text-ferro-yellow-900">¿Olvidaste tu contraseña?</a>
+                <a href="{{ route('password.request') }}" class="font-body text-xs font-semibold text-ferro-yellow-700 transition-colors hover:text-ferro-yellow-900">¿Olvidaste tu contraseña?</a>
             </div>
             <input
                 id="login-password"

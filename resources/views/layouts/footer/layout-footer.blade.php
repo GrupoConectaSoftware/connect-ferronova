@@ -153,13 +153,13 @@
         {{-- FILA 2: ENLACES LEGALES + COPYRIGHT --}}
         <div class="flex flex-col items-start justify-between gap-4 pt-5 sm:flex-row sm:items-center">
             <div class="flex flex-col items-start gap-2 text-[10px] text-ferro-white/60 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 sm:text-xs">
-                <a href="#" class="hover:text-ferro-yellow-500 transition-colors">Términos y condiciones</a>
+                <a href="{{ route('legal.terms') }}" class="hover:text-ferro-yellow-500 transition-colors">Términos y condiciones</a>
                 <span class="hidden text-ferro-carbon-600 sm:inline">·</span>
-                <a href="#" class="hover:text-ferro-yellow-500 transition-colors">Política de privacidad</a>
+                <a href="{{ route('legal.privacy') }}" class="hover:text-ferro-yellow-500 transition-colors">Política de privacidad</a>
                 <span class="hidden text-ferro-carbon-600 sm:inline">·</span>
-                <a href="#" class="hover:text-ferro-yellow-500 transition-colors">Tratamiento de datos</a>
+                <a href="{{ route('data.treatment') }}" class="hover:text-ferro-yellow-500 transition-colors">Tratamiento de datos</a>
                 <span class="hidden text-ferro-carbon-600 sm:inline">·</span>
-                <a href="#" class="hover:text-ferro-yellow-500 transition-colors">Política de garantías</a>
+                <a href="{{ route('legal.warranty') }}" class="hover:text-ferro-yellow-500 transition-colors">Política de garantías</a>
             </div>
             <p class="text-left font-body text-[9px] text-ferro-white/40 sm:text-right sm:text-[10px]">
                 © {{ date('Y') }} FERRANOVA. Maquetas UX/UI de demostración.
