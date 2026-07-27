@@ -92,7 +92,7 @@
                     </a>
                 </div>
 
-                @include('pages.form.sesion.login.component.form-login-component')
+                @include('form.sesion.login.component.form-login-component')
 
             </div>
         </div>

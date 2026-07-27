@@ -122,7 +122,7 @@
 
                     {{-- INCLUSIÓN DEL FORMULARIO COMPONENTE --}}
                     <div class="w-full">
-                        @include('pages.form.components.contact.component-contact-form')
+                        @include('form.components.contact.component-contact-form')
                     </div>
 
                     {{-- Nota informativa sutil --}}

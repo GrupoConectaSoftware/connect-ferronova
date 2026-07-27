@@ -25,6 +25,11 @@ Route::prefix('index')->group(function () {
         return view('modules.heart.ferronova-heart');
     })->name('heart');
 
+    // VISUALIZACIÓN DE PRODUCTOS (PRODUCTOS Y POR UNIDAD)
+    Route::get('/visualizar-producto', function () {
+        return view('modules.previews.ferronova-previews');
+    })->name('product.preview');
+
     // MÓDULO UNITED (POR UNIDAD)
     Route::get('/por-unidad', function () {
         return view('pages.index.sections.united.ferronova-united');
@@ -60,9 +65,9 @@ Route::prefix('index')->group(function () {
 // AUTENTICACIÓN (LOGIN Y REGISTRO)
 // ==========================================================
 Route::get('/login', function () {
-    return view('pages.form.sesion.login.form-login');
+    return view('form.sesion.login.form-login');
 })->name('login');
 
 Route::get('/register', function () {
-    return view('pages.form.sesion.register.form-register');
+    return view('form.sesion.register.form-register');
 })->name('register');

@@ -43,7 +43,12 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
                     <div class="grid grid-cols-[1fr_auto] items-baseline gap-3"><span class="text-[10px] font-bold uppercase tracking-wider text-ferro-steel-500">Unidad</span><span class="text-right font-heading text-lg font-bold tabular-nums text-ferro-carbon-900">{{ formatPrice(product.unitPrice) }}</span></div>
                     <div class="grid grid-cols-[1fr_auto] items-baseline gap-3"><span class="text-[10px] font-bold uppercase tracking-wider text-ferro-steel-500">Caja x{{ product.boxQuantity }}</span><span class="text-right font-heading text-base font-semibold tabular-nums text-ferro-yellow-600">{{ formatPrice(product.boxPrice) }}</span></div>
                 </div>
-                <BtnVisualizar class="mt-4" text="Ver Detalle" />
+                <BtnVisualizar
+                    class="mt-4"
+                    text="Ver Detalle"
+                    href="/index/visualizar-producto"
+                    :product="{ ...product, key: `united-${product.id}`, type: 'unit', price: product.unitPrice, brand: 'FERRANOVA Unidad' }"
+                />
             </div>
         </article>
     </div>

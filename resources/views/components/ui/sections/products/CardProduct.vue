@@ -57,7 +57,11 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
                     <span class="font-heading text-xl font-bold tracking-tight text-ferro-carbon-900">{{ formatPrice(product.price) }}</span>
                     <span v-if="product.originalPrice" class="text-xs text-ferro-steel-400 line-through">{{ formatPrice(product.originalPrice) }}</span>
                 </div>
-                <BtnVisualizar class="mt-4" />
+                <BtnVisualizar
+                    class="mt-4"
+                    href="/index/visualizar-producto"
+                    :product="{ ...product, key: `product-${product.id}`, type: 'product', brand: 'FERRANOVA' }"
+                />
             </div>
         </article>
     </div>

@@ -48,7 +48,7 @@
                 {{-- ==========================================================
                     COMPONENTE: FORMULARIO DE REGISTRO
                     ========================================================== --}}
-                @include('pages.form.sesion.register.component.form-register-component')
+                @include('form.sesion.register.component.form-register-component')
 
             </div>
         </div>
