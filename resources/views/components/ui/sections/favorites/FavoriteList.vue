@@ -136,7 +136,12 @@ onBeforeUnmount(() => window.removeEventListener(FAVORITES_UPDATED_EVENT, syncFa
                         <p class="font-heading text-xl font-bold tracking-tight text-ferro-carbon-900">{{ formatPrice(item.price) }}</p>
                     </div>
 
-                    <BtnVisualizar class="mt-4" :text="item.type === 'rental' ? 'Ver Disponibilidad' : 'Visualizar Producto'" />
+                    <BtnVisualizar
+                        class="mt-4"
+                        :text="item.type === 'rental' ? 'Ver Disponibilidad' : 'Visualizar Producto'"
+                        :product="item"
+                        :href="item.type === 'rental' ? '/index/agendamiento' : '/index/visualizar-producto'"
+                    />
                 </div>
             </article>
         </div>

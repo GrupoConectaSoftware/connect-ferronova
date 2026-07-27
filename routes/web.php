@@ -45,6 +45,11 @@ Route::prefix('index')->group(function () {
         return view('pages.index.sections.projects.ferronova-projects');
     })->name('projects');
 
+    // AGENDAMIENTO DE SERVICIOS
+    Route::get('/agendamiento', function () {
+        return view('modules.schedule.ferronova-schedule');
+    })->name('schedule');
+
     // SOBRE NOSOTROS
     Route::get('/sobre-nosotros', function () {
         return view('pages.index.sections.about.ferronova-about');

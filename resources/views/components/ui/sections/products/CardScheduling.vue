@@ -39,7 +39,12 @@ const formatPrice = (value) => new Intl.NumberFormat('es-CO', { style: 'currency
                         <span class="mt-0.5 block font-heading text-xs font-bold text-ferro-carbon-900">{{ formatPrice(price.value) }}</span>
                     </div>
                 </div>
-                <BtnVisualizar class="mt-4" text="Ver Disponibilidad" />
+                <BtnVisualizar
+                    class="mt-4"
+                    text="Ver Disponibilidad"
+                    :product="{ ...rental, key: `rental-${rental.id}`, type: 'rental', price: rental.prices[0].value }"
+                    href="/index/agendamiento"
+                />
             </div>
         </article>
     </div>

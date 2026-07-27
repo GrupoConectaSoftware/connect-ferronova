@@ -60,6 +60,7 @@
                     <li><a href="{{ route('category') }}" class="hover:text-ferro-yellow-500 transition-colors">Catálogo</a></li>
                     <li><a href="{{ route('category') }}#catalog-content" class="hover:text-ferro-yellow-500 transition-colors">Categorías</a></li>
                     <li><a href="{{ route('united') }}" class="hover:text-ferro-yellow-500 transition-colors">Por unidad</a></li>
+                    <li><a href="{{ route('schedule') }}" class="hover:text-ferro-yellow-500 transition-colors">Agendamiento</a></li>
                 </ul>
             </div>
 
